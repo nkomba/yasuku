@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Canton Yassoukou — 13 Villages, Un Peuple, Une Histoire… et le Fleuve. Site officiel du peuple Yasuku / Yasug des Elog Mpoo (Bakoko), Cameroun."/>
+  <meta property="og:title" content="Yasuku.org — Canton Yassoukou, Cameroun"/>
+  <meta property="og:description" content="Histoire, culture, langue et patrimoine du peuple Yasuku, Littoral Cameroun."/>
+  <title>Yasuku.org — Canton Yassoukou · 13 Villages, Un Peuple, Une Histoire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="lang-fr">
+
+<!-- ===== NAVIGATION ===== -->
+<nav id="navbar" role="navigation">
+  <a href="index.html" class="nav-logo">
+    <!-- Inline SVG Logo: canoe paddler on Sanaga River -->
+    <svg width="46" height="46" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="border-radius:10px">
+      <rect width="200" height="200" rx="28" fill="#eef6fc"/>
+      <!-- Water -->
+      <ellipse cx="100" cy="158" rx="92" ry="38" fill="#2980b9"/>
+      <path d="M8,148 Q55,132 100,148 Q145,164 192,148 L192,200 L8,200 Z" fill="#1f6fa3"/>
+      <!-- Wave highlights -->
+      <path d="M18,155 Q60,144 100,155 Q140,166 182,155" stroke="#5dade2" stroke-width="2.5" fill="none" opacity="0.55"/>
+      <path d="M28,163 Q70,154 110,163 Q148,172 178,163" stroke="#aedcf0" stroke-width="1.5" fill="none" opacity="0.4"/>
+      <!-- Canoe -->
+      <path d="M25,144 Q100,124 175,144 Q162,162 38,162 Z" fill="#7d4f0c"/>
+      <path d="M25,144 Q100,126 175,144" stroke="#5c3808" stroke-width="1.5" fill="none"/>
+      <!-- Seated figure — facing right -->
+      <!-- Torso/shirt green -->
+      <ellipse cx="96" cy="134" rx="11" ry="12" fill="#27ae60"/>
+      <!-- Arms -->
+      <path d="M96,128 Q106,122 118,120" stroke="#3d1f0a" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <path d="M96,134 Q107,130 118,128" stroke="#3d1f0a" stroke-width="4" stroke-linecap="round" fill="none"/>
+      <!-- Paddle shaft -->
+      <line x1="118" y1="120" x2="128" y2="148" stroke="#8b5e2a" stroke-width="4" stroke-linecap="round"/>
+      <!-- Paddle blade -->
+      <ellipse cx="130" cy="154" rx="8" ry="13" fill="#7d4f0c" transform="rotate(-15,130,154)"/>
+      <!-- Head -->
+      <circle cx="88" cy="118" r="11" fill="#3d1f0a"/>
+      <!-- Ear -->
+      <ellipse cx="98" cy="118" rx="3.5" ry="5" fill="#3d1f0a"/>
+      <!-- Neck -->
+      <rect x="85" y="127" width="7" height="7" rx="2" fill="#3d1f0a"/>
+    </svg>
+    <div>
+      <span class="nav-logo-text">Yasuku.org</span>
+      <span class="nav-logo-sub">Canton Yassoukou · Cameroun</span>
+    </div>
+  </a>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">
+      <span class="lang-fr">Accueil</span><span class="lang-en">Home</span>
+    </a></li>
+    <li><a href="history.html">
+      <span class="lang-fr">Histoire</span><span class="lang-en">History</span>
+    </a></li>
+    <li><a href="community.html">
+      <span class="lang-fr">Communauté</span><span class="lang-en">Community</span>
+    </a></li>
+    <li><a href="learn.html">
+      <span class="lang-fr">Apprendre</span><span class="lang-en">Learn</span>
+    </a></li>
+    <li><a href="stories.html">
+      <span class="lang-fr">Récits</span><span class="lang-en">Stories</span>
+    </a></li>
+    <li><a href="games.html">
+      <span class="lang-fr">Jeux</span><span class="lang-en">Games</span>
+    </a></li>
+    <li><a href="about.html"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a></li>
+    <button class="lang-btn" aria-label="Switch language">English</button>
+  </ul>
+
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section class="hero" aria-label="Bienvenue / Welcome">
+  <div class="hero-ripple">
+    <svg viewBox="0 0 1440 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,100 C240,160 480,40 720,100 C960,160 1200,40 1440,100 L1440,200 L0,200 Z" fill="rgba(13,59,94,0.6)"/>
+      <path d="M0,130 C200,90 400,170 600,130 C800,90 1000,170 1200,130 C1300,110 1380,140 1440,130 L1440,200 L0,200 Z" fill="rgba(13,59,94,0.8)"/>
+      <path d="M0,160 C360,120 720,180 1080,140 C1200,124 1340,158 1440,150 L1440,200 L0,200 Z" fill="rgba(13,59,94,1)"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <!-- Inline SVG as hero logo -->
+    <svg class="hero-logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="200" rx="28" fill="#eef6fc"/>
+      <ellipse cx="100" cy="158" rx="92" ry="38" fill="#2980b9"/>
+      <path d="M8,148 Q55,132 100,148 Q145,164 192,148 L192,200 L8,200 Z" fill="#1f6fa3"/>
+      <path d="M18,155 Q60,144 100,155 Q140,166 182,155" stroke="#5dade2" stroke-width="2.5" fill="none" opacity="0.55"/>
+      <path d="M28,163 Q70,154 110,163 Q148,172 178,163" stroke="#aedcf0" stroke-width="1.5" fill="none" opacity="0.4"/>
+      <path d="M25,144 Q100,124 175,144 Q162,162 38,162 Z" fill="#7d4f0c"/>
+      <path d="M25,144 Q100,126 175,144" stroke="#5c3808" stroke-width="1.5" fill="none"/>
+      <ellipse cx="96" cy="134" rx="11" ry="12" fill="#27ae60"/>
+      <path d="M96,128 Q106,122 118,120" stroke="#3d1f0a" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <path d="M96,134 Q107,130 118,128" stroke="#3d1f0a" stroke-width="4" stroke-linecap="round" fill="none"/>
+      <line x1="118" y1="120" x2="128" y2="148" stroke="#8b5e2a" stroke-width="4" stroke-linecap="round"/>
+      <ellipse cx="130" cy="154" rx="8" ry="13" fill="#7d4f0c" transform="rotate(-15,130,154)"/>
+      <circle cx="88" cy="118" r="11" fill="#3d1f0a"/>
+      <ellipse cx="98" cy="118" rx="3.5" ry="5" fill="#3d1f0a"/>
+      <rect x="85" y="127" width="7" height="7" rx="2" fill="#3d1f0a"/>
+    </svg>
+
+    <p class="hero-tagline lang-fr">Région du Littoral · Sanaga-Maritime · Edéa 1, Cameroun</p>
+    <p class="hero-tagline lang-en">Littoral Region · Sanaga-Maritime · Edéa 1, Cameroon</p>
+
+    <h1 class="lang-fr">Canton Yassoukou<br/><em>13 Villages, Un Peuple, Une Histoire…</em><br/>et le Fleuve</h1>
+    <h1 class="lang-en">Canton Yassoukou<br/><em>13 Villages, One People, One History…</em><br/>and the River</h1>
+
+    <p class="hero-sub lang-fr">
+      Le peuple Yasuku, descendants de Lisukè fils de Mpoo, gardiens des rives de la Sanaga et du Wouri depuis des générations. Bienvenue sur notre mémoire vivante.
+    </p>
+    <p class="hero-sub lang-en">
+      The Yasuku people, descendants of Lisukè son of Mpoo, keepers of the Sanaga and Wouri rivers for generations. Welcome to our living memory.
+    </p>
+
+    <div class="hero-cta">
+      <a href="history.html" class="btn btn-primary lang-fr">Découvrir notre histoire</a>
+      <a href="history.html" class="btn btn-primary lang-en">Discover our history</a>
+      <a href="learn.html" class="btn btn-outline lang-fr">Apprendre le Yasug</a>
+      <a href="learn.html" class="btn btn-outline lang-en">Learn the Yasug language</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FACTS STRIP ===== -->
+<div class="facts-strip" aria-label="Chiffres clés">
+  <div class="facts-grid">
+    <div class="fade-in">
+      <div class="fact-num">13</div>
+      <div class="fact-label lang-fr">Villages / Clans Elog Mpoo</div>
+      <div class="fact-label lang-en">Villages / Elog Mpoo Clans</div>
+    </div>
+    <div class="fade-in">
+      <div class="fact-num">~1 765</div>
+      <div class="fact-label lang-fr">Habitants du canton</div>
+      <div class="fact-label lang-en">Canton inhabitants</div>
+    </div>
+    <div class="fade-in">
+      <div class="fact-num">3</div>
+      <div class="fact-label lang-fr">Générations depuis Mpoo</div>
+      <div class="fact-label lang-en">Generations from Mpoo</div>
+    </div>
+    <div class="fade-in">
+      <div class="fact-num">8 déc.</div>
+      <div class="fact-label lang-fr">Fête Mpoo chaque année</div>
+      <div class="fact-label lang-en">Annual Fête Mpoo</div>
+    </div>
+    <div class="fade-in">
+      <div class="fact-num">1891</div>
+      <div class="fact-label lang-fr">Résistance aux colonisateurs</div>
+      <div class="fact-label lang-en">Resistance against colonizers</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section class="river-section" style="background:var(--river-mist)">
+  <div class="section-inner">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:3.5rem; align-items:center" class="about-grid">
+      <div class="fade-in">
+        <span class="section-tag lang-fr">Qui sommes-nous ?</span>
+        <span class="section-tag lang-en">Who are we?</span>
+        <h2 class="section-title lang-fr">Les descendants de Lisukè,<br/>peuple des rives</h2>
+        <h2 class="section-title lang-en">The descendants of Lisukè,<br/>people of the riverbanks</h2>
+        <div class="section-divider"></div>
+        <p class="lang-fr">Les <strong>Yasuku</strong> (aussi orthographiés Yassoukou, Yasug, ou Yasuk) sont l'un des treize clans des <strong>Elog Mpoo</strong> — le peuple Bakoko du Cameroun. Nous descendons de <strong>NGANGOHE dit LISUKE</strong>, fils de Linyima, fils de Mpoo, fondateur ancestral de toute la famille Elog Mpoo.</p>
+        <p class="lang-en">The <strong>Yasuku</strong> (also spelled Yassoukou, Yasug, or Yasuk) are one of the thirteen clans of the <strong>Elog Mpoo</strong> — the Bakoko people of Cameroon. We descend from <strong>NGANGOHE known as LISUKE</strong>, son of Linyima, son of Mpoo, founding ancestor of the entire Elog Mpoo family.</p>
+        <p class="lang-fr">Installés dans l'arrondissement d'Edéa 1, département de la Sanaga-Maritime, Région du Littoral, notre canton porte le code administratif <strong>5.3.2.3.</strong> Le préfixe <em>Ya-</em> dans Yasuku — comme dans Yakalak, Yawanda, Yabii — signifie en langue Bakoko <em>« descendants de »</em> : nous sommes le peuple de Lisuke, notre ancêtre éponyme.</p>
+        <p class="lang-en">Located in the arrondissement of Edéa 1, Sanaga-Maritime department, Littoral Region, our canton carries administrative code <strong>5.3.2.3.</strong> The prefix <em>Ya-</em> in Yasuku — as in Yakalak, Yawanda, Yabii — means in Bakoko <em>"descendants of"</em>: we are the people of Lisuke, our eponymous ancestor.</p>
+        <div style="margin-top:1.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="history.html" class="btn btn-river lang-fr">Notre généalogie →</a>
+          <a href="history.html" class="btn btn-river lang-en">Our genealogy →</a>
+          <a href="community.html" class="btn btn-outline" style="color:var(--river-deep);border-color:var(--river-deep)">
+            <span class="lang-fr">Les 13 villages →</span>
+            <span class="lang-en">The 13 villages →</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- River illustration -->
+      <div class="fade-in" style="border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-lg)">
+        <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;background:linear-gradient(160deg,#b8dcea 0%,#d8eef8 50%,#c5e3f0 100%)">
+          <!-- Sky gradient -->
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#c8e8f5"/>
+              <stop offset="100%" stop-color="#e8f5fc"/>
+            </linearGradient>
+            <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2980b9"/>
+              <stop offset="100%" stop-color="#1a6b8a"/>
+            </linearGradient>
+            <linearGradient id="sunset" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#f39c12" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#e67e22" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <!-- Sky -->
+          <rect width="480" height="380" fill="url(#sky)"/>
+          <!-- Sun glow -->
+          <circle cx="420" cy="80" r="45" fill="#f5d76e" opacity="0.6"/>
+          <circle cx="420" cy="80" r="28" fill="#f0c020"/>
+          <!-- Forest silhouette far -->
+          <path d="M0,140 Q60,110 120,130 Q180,110 240,125 Q300,108 360,128 Q420,108 480,125 L480,200 L0,200 Z" fill="#2d6a2d" opacity="0.7"/>
+          <!-- Forest near left -->
+          <path d="M0,155 Q30,138 60,150 Q90,135 120,148 Q150,132 180,145 L180,220 L0,220 Z" fill="#1a3d1a"/>
+          <!-- River surface -->
+          <rect x="0" y="210" width="480" height="170" fill="url(#water)"/>
+          <!-- River reflections -->
+          <path d="M0,230 Q120,218 240,230 Q360,242 480,230" stroke="#5dade2" stroke-width="2" fill="none" opacity="0.4"/>
+          <path d="M0,250 Q100,240 200,250 Q300,260 400,248 Q440,244 480,250" stroke="#aedcf0" stroke-width="1.5" fill="none" opacity="0.3"/>
+          <path d="M0,268 Q80,258 160,268 Q240,278 320,265 Q400,255 480,265" stroke="#aedcf0" stroke-width="1.5" fill="none" opacity="0.25"/>
+          <!-- Sunset shimmer on water -->
+          <rect x="340" y="210" width="140" height="170" fill="url(#sunset)"/>
+          <!-- Canoe 1 (left, two paddlers) -->
+          <path d="M60,240 Q120,228 180,240 Q168,252 72,252 Z" fill="#6b4010"/>
+          <path d="M60,240 Q120,229 180,240" stroke="#4a2c08" stroke-width="1.5" fill="none"/>
+          <!-- Paddler 1 -->
+          <circle cx="90" cy="233" r="7" fill="#3d1f0a"/>
+          <ellipse cx="90" cy="240" rx="6" ry="8" fill="#c0392b"/>
+          <line x1="90" y1="235" x2="104" y2="228" stroke="#3d1f0a" stroke-width="3" stroke-linecap="round"/>
+          <line x1="104" y1="228" x2="110" y2="244" stroke="#8b5e2a" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Paddler 2 -->
+          <circle cx="145" cy="233" r="7" fill="#3d1f0a"/>
+          <ellipse cx="145" cy="240" rx="6" ry="8" fill="#27ae60"/>
+          <line x1="145" y1="235" x2="158" y2="228" stroke="#3d1f0a" stroke-width="3" stroke-linecap="round"/>
+          <line x1="158" y1="228" x2="164" y2="244" stroke="#8b5e2a" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Canoe 2 (right, fisherman with net) -->
+          <path d="M300,258 Q350,248 400,258 Q392,268 308,268 Z" fill="#7d4f0c"/>
+          <circle cx="335" cy="252" r="6" fill="#3d1f0a"/>
+          <ellipse cx="335" cy="258" rx="5.5" ry="7" fill="#2980b9"/>
+          <!-- Fishing net -->
+          <path d="M335,248 Q352,238 368,245 Q365,260 342,258 Z" stroke="#555" stroke-width="1.2" fill="rgba(255,255,255,0.2)"/>
+          <!-- Net grid lines -->
+          <line x1="344" y1="247" x2="348" y2="260" stroke="#555" stroke-width="0.8" opacity="0.6"/>
+          <line x1="354" y1="243" x2="357" y2="257" stroke="#555" stroke-width="0.8" opacity="0.6"/>
+          <line x1="340" y1="250" x2="364" y2="253" stroke="#555" stroke-width="0.8" opacity="0.6"/>
+          <line x1="338" y1="255" x2="360" y2="258" stroke="#555" stroke-width="0.8" opacity="0.6"/>
+          <!-- Village huts on bank -->
+          <rect x="195" y="168" width="40" height="28" rx="3" fill="#c8a060"/>
+          <polygon points="188,170 215,148 242,170" fill="#8b4513"/>
+          <rect x="208" y="182" width="12" height="14" fill="#7d4020"/>
+          <rect x="250" y="172" width="38" height="26" rx="3" fill="#c8a060"/>
+          <polygon points="244,174 269,152 294,174" fill="#8b4513"/>
+          <rect x="263" y="184" width="11" height="14" fill="#7d4020"/>
+          <!-- Palm trees -->
+          <line x1="150" y1="170" x2="155" y2="210" stroke="#5c3808" stroke-width="3"/>
+          <path d="M155,170 Q140,158 128,162 Q138,168 140,174 Q150,162 160,168 Q165,156 155,158 Q160,164 155,170 Z" fill="#27ae60"/>
+          <line x1="310" y1="165" x2="313" y2="210" stroke="#5c3808" stroke-width="3"/>
+          <path d="M313,165 Q298,153 286,157 Q296,163 298,169 Q308,157 318,163 Q323,151 313,153 Q318,159 313,165 Z" fill="#2ecc71"/>
+          <!-- Birds -->
+          <path d="M200,95 Q207,88 214,95" stroke="#666" stroke-width="1.5" fill="none"/>
+          <path d="M230,80 Q237,73 244,80" stroke="#666" stroke-width="1.5" fill="none"/>
+          <path d="M260,100 Q265,94 270,100" stroke="#666" stroke-width="1.5" fill="none"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NAVIGATION CARDS ===== -->
+<section style="background:var(--white)">
+  <div class="section-inner">
+    <div class="text-center fade-in" style="margin-bottom:3rem">
+      <span class="section-tag lang-fr">Explorer</span>
+      <span class="section-tag lang-en">Explore</span>
+      <h2 class="section-title lang-fr">Six chemins vers Yassoukou</h2>
+      <h2 class="section-title lang-en">Six paths into Yassoukou</h2>
+      <div class="section-divider" style="margin:1rem auto"></div>
+    </div>
+
+    <div class="cards-grid">
+      <!-- Card 1: History -->
+      <a href="history.html" class="card fade-in">
+        <div class="card-illustration">
+          <svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg">
+            <!-- Ngog Lituba sacred rock scene -->
+            <rect width="320" height="190" fill="#c8e8f5"/>
+            <rect x="0" y="130" width="320" height="60" fill="#4a9e6f" opacity="0.6"/>
+            <!-- Rock/mountain -->
+            <path d="M90,130 Q130,60 170,130 Z" fill="#6b7280"/>
+            <path d="M110,130 Q145,72 180,130 Z" fill="#8b9198"/>
+            <!-- Cave opening (Ngog Lituba hole) -->
+            <ellipse cx="148" cy="118" rx="14" ry="18" fill="#2c3442"/>
+            <ellipse cx="148" cy="116" rx="10" ry="13" fill="#1a2030"/>
+            <!-- Pilgrims -->
+            <circle cx="55" cy="128" r="5" fill="#3d1f0a"/>
+            <ellipse cx="55" cy="136" rx="4" ry="6" fill="#e74c3c"/>
+            <circle cx="68" cy="126" r="5" fill="#3d1f0a"/>
+            <ellipse cx="68" cy="134" rx="4" ry="6" fill="#3498db"/>
+            <circle cx="240" cy="128" r="5" fill="#3d1f0a"/>
+            <ellipse cx="240" cy="136" rx="4" ry="6" fill="#e67e22"/>
+            <!-- Stars/sun -->
+            <circle cx="260" cy="35" r="22" fill="#f5d76e" opacity="0.7"/>
+            <circle cx="260" cy="35" r="14" fill="#f0c020"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">📜</div>
+          <h3 class="lang-fr">Histoire</h3>
+          <h3 class="lang-en">History</h3>
+          <p class="lang-fr">De l'Égypte ancienne aux rives de la Sanaga — l'origine des Elog Mpoo, la généalogie de Mpoo et la résistance à la colonisation allemande.</p>
+          <p class="lang-en">From ancient Egypt to the banks of the Sanaga — the origin of the Elog Mpoo, Mpoo's genealogy, and resistance to German colonization.</p>
+          <span class="card-link lang-fr">Lire l'histoire →</span>
+          <span class="card-link lang-en">Read the history →</span>
+        </div>
+      </a>
+
+      <!-- Card 2: Community -->
+      <a href="community.html" class="card fade-in">
+        <div class="card-illustration">
+          <svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg">
+            <rect width="320" height="190" fill="#c8e8f5"/>
+            <rect x="0" y="140" width="320" height="50" fill="#2980b9" opacity="0.5"/>
+            <!-- Village panorama -->
+            <path d="M0,120 Q80,100 160,115 Q240,100 320,118 L320,190 L0,190 Z" fill="#5da05d" opacity="0.7"/>
+            <!-- 5 huts representing villages -->
+            <g transform="translate(20,95)">
+              <rect x="0" y="20" width="32" height="22" rx="2" fill="#d4a05a"/>
+              <polygon points="-4,22 16,4 36,22" fill="#8b4513"/>
+            </g>
+            <g transform="translate(80,88)">
+              <rect x="0" y="20" width="36" height="25" rx="2" fill="#c8902a"/>
+              <polygon points="-5,22 18,2 41,22" fill="#7d3a10"/>
+            </g>
+            <g transform="translate(148,85)">
+              <rect x="0" y="20" width="34" height="26" rx="2" fill="#d4a05a"/>
+              <polygon points="-4,22 17,1 38,22" fill="#8b4513"/>
+            </g>
+            <g transform="translate(215,90)">
+              <rect x="0" y="20" width="32" height="24" rx="2" fill="#c8902a"/>
+              <polygon points="-4,22 16,3 36,22" fill="#7d3a10"/>
+            </g>
+            <g transform="translate(272,95)">
+              <rect x="0" y="20" width="30" height="22" rx="2" fill="#d4a05a"/>
+              <polygon points="-4,22 15,4 34,22" fill="#8b4513"/>
+            </g>
+            <!-- People gathering -->
+            <circle cx="160" cy="150" r="5" fill="#3d1f0a"/>
+            <circle cx="145" cy="152" r="5" fill="#3d1f0a"/>
+            <circle cx="175" cy="150" r="5" fill="#3d1f0a"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🏘️</div>
+          <h3 class="lang-fr">Communauté</h3>
+          <h3 class="lang-en">Community</h3>
+          <p class="lang-fr">Les 13 villages du Canton Yassoukou, la structure clanique des Elog Mpoo, et les chefs traditionnels qui gardent notre héritage.</p>
+          <p class="lang-en">The 13 villages of Canton Yassoukou, the clan structure of the Elog Mpoo, and the traditional chiefs who guard our heritage.</p>
+          <span class="card-link lang-fr">Voir la communauté →</span>
+          <span class="card-link lang-en">See the community →</span>
+        </div>
+      </a>
+
+      <!-- Card 3: Learn -->
+      <a href="learn.html" class="card fade-in">
+        <div class="card-illustration">
+          <svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg">
+            <rect width="320" height="190" fill="#c8e8f5"/>
+            <!-- Open book with river background -->
+            <rect x="0" y="130" width="320" height="60" fill="#2980b9" opacity="0.4"/>
+            <!-- Book -->
+            <rect x="60" y="50" width="200" height="120" rx="10" fill="#f5f0e5" transform="rotate(-3,160,110)"/>
+            <line x1="160" y1="52" x2="160" y2="168" stroke="#c8a060" stroke-width="3"/>
+            <!-- Text lines left page -->
+            <line x1="75" y1="78" x2="152" y2="76" stroke="#9b8b7a" stroke-width="2" opacity="0.5"/>
+            <line x1="75" y1="90" x2="148" y2="88" stroke="#9b8b7a" stroke-width="2" opacity="0.5"/>
+            <line x1="75" y1="102" x2="150" y2="100" stroke="#9b8b7a" stroke-width="2" opacity="0.5"/>
+            <line x1="75" y1="114" x2="145" y2="112" stroke="#9b8b7a" stroke-width="2" opacity="0.5"/>
+            <!-- Bakoko script / decorative text right page -->
+            <text x="170" y="90" font-family="Georgia" font-size="18" fill="#1a6b8a" font-weight="bold">Ya-</text>
+            <text x="170" y="112" font-family="Georgia" font-size="14" fill="#2d6a2d">Suku</text>
+            <text x="170" y="132" font-family="Georgia" font-size="12" fill="#8b5e2a">Elog</text>
+            <!-- Quill -->
+            <path d="M240,45 Q270,20 275,55 Q260,50 248,80 Q244,65 240,45 Z" fill="#e8d5a0"/>
+            <line x1="253" y1="64" x2="240" y2="110" stroke="#9b8b7a" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🗣️</div>
+          <h3 class="lang-fr">Apprendre la langue</h3>
+          <h3 class="lang-en">Learn the language</h3>
+          <p class="lang-fr">Le Yasug, dialecte nord du Kogo (Bakoko), langue bantoue de nos ancêtres. Vocabulaire, prononciation et expressions de la vie quotidienne.</p>
+          <p class="lang-en">Yasug, northern dialect of Kogo (Bakoko), Bantu language of our ancestors. Vocabulary, pronunciation, and expressions of daily life.</p>
+          <span class="card-link lang-fr">Commencer →</span>
+          <span class="card-link lang-en">Start learning →</span>
+        </div>
+      </a>
+
+      <!-- Card 4: Stories -->
+      <a href="stories.html" class="card fade-in">
+        <div class="card-illustration">
+          <svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg">
+            <rect width="320" height="190" fill="#b8dcea"/>
+            <!-- Night campfire scene -->
+            <rect x="0" y="120" width="320" height="70" fill="#0d3b5e" opacity="0.85"/>
+            <!-- Stars -->
+            <circle cx="50" cy="30" r="1.5" fill="#fff" opacity="0.8"/>
+            <circle cx="100" cy="15" r="2" fill="#fff"/>
+            <circle cx="160" cy="25" r="1.5" fill="#fff" opacity="0.9"/>
+            <circle cx="220" cy="10" r="2" fill="#fff"/>
+            <circle cx="280" cy="30" r="1.5" fill="#fff" opacity="0.7"/>
+            <circle cx="130" cy="50" r="1" fill="#fff"/>
+            <circle cx="200" cy="45" r="1" fill="#fff" opacity="0.8"/>
+            <!-- Moon -->
+            <circle cx="60" cy="45" r="22" fill="#f5e642" opacity="0.7"/>
+            <circle cx="68" cy="40" r="16" fill="#b8dcea"/>
+            <!-- River reflection of moon -->
+            <ellipse cx="80" cy="158" rx="20" ry="8" fill="#f5e642" opacity="0.2"/>
+            <!-- Campfire -->
+            <ellipse cx="160" cy="135" rx="18" ry="5" fill="#7d2d00" opacity="0.7"/>
+            <path d="M152,135 Q160,108 168,135 Z" fill="#e07020"/>
+            <path d="M155,135 Q162,115 170,135 Z" fill="#f0a030"/>
+            <path d="M158,135 Q163,120 167,135 Z" fill="#f5d050"/>
+            <!-- Seated elders around fire -->
+            <circle cx="130" cy="132" r="6" fill="#3d1f0a"/>
+            <ellipse cx="130" cy="140" rx="7" ry="9" fill="#c0392b"/>
+            <circle cx="195" cy="132" r="6" fill="#3d1f0a"/>
+            <ellipse cx="195" cy="140" rx="7" ry="9" fill="#2980b9"/>
+            <circle cx="162" cy="148" r="5" fill="#3d1f0a"/>
+            <ellipse cx="162" cy="155" rx="6" ry="7" fill="#e67e22"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🌙</div>
+          <h3 class="lang-fr">Récits anciens</h3>
+          <h3 class="lang-en">Ancient Stories</h3>
+          <p class="lang-fr">Les contes transmis de génération en génération autour du feu : l'origine du monde Mpoo, Ngog Lituba, et les héros de la résistance.</p>
+          <p class="lang-en">Tales passed down through generations around the fire: the origin of the Mpoo world, Ngog Lituba, and the heroes of resistance.</p>
+          <span class="card-link lang-fr">Lire les récits →</span>
+          <span class="card-link lang-en">Read the stories →</span>
+        </div>
+      </a>
+
+      <!-- Card 5: Games -->
+      <a href="games.html" class="card fade-in">
+        <div class="card-illustration">
+          <svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg">
+            <rect width="320" height="190" fill="#c5e3f0"/>
+            <!-- River with children playing -->
+            <rect x="0" y="120" width="320" height="70" fill="#2980b9" opacity="0.6"/>
+            <path d="M0,118 Q80,108 160,118 Q240,128 320,115 L320,190 L0,190 Z" fill="#1f6fa3" opacity="0.8"/>
+            <!-- Mancala board on bank -->
+            <rect x="90" y="95" width="140" height="28" rx="14" fill="#7d4f0c"/>
+            <!-- Holes -->
+            <circle cx="115" cy="109" r="8" fill="rgba(0,0,0,0.3)"/>
+            <circle cx="140" cy="109" r="8" fill="rgba(0,0,0,0.3)"/>
+            <circle cx="165" cy="109" r="8" fill="rgba(0,0,0,0.3)"/>
+            <circle cx="190" cy="109" r="8" fill="rgba(0,0,0,0.3)"/>
+            <!-- Seeds -->
+            <circle cx="113" cy="108" r="2.5" fill="#d4a843"/>
+            <circle cx="118" cy="111" r="2.5" fill="#d4a843"/>
+            <circle cx="138" cy="107" r="2.5" fill="#d4a843"/>
+            <circle cx="143" cy="111" r="2.5" fill="#d4a843"/>
+            <!-- Playing children -->
+            <circle cx="100" cy="90" r="7" fill="#3d1f0a"/>
+            <ellipse cx="100" cy="100" rx="7" ry="8" fill="#e74c3c"/>
+            <circle cx="220" cy="90" r="7" fill="#3d1f0a"/>
+            <ellipse cx="220" cy="100" rx="7" ry="8" fill="#27ae60"/>
+            <!-- Canoe race track (water) -->
+            <path d="M40,138 Q80,132 120,138" stroke="#fff" stroke-width="1.5" stroke-dasharray="4,3" fill="none" opacity="0.6"/>
+            <text x="42" y="150" font-size="18">🛶</text>
+            <text x="100" y="148" font-size="16">🛶</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🎮</div>
+          <h3 class="lang-fr">Jeux traditionnels</h3>
+          <h3 class="lang-en">Traditional Games</h3>
+          <p class="lang-fr">Minkala (Mancala), course de pirogues, jeu des 13 clans — des activités interactives pour les enfants et les familles de la diaspora.</p>
+          <p class="lang-en">Minkala (Mancala), canoe racing, the 13 clans game — interactive activities for children and diaspora families.</p>
+          <span class="card-link lang-fr">Jouer →</span>
+          <span class="card-link lang-en">Play now →</span>
+        </div>
+      </a>
+
+      <!-- Card 6: Diaspora -->
+      <a href="#diaspora" class="card fade-in">
+        <div class="card-illustration">
+          <svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg">
+            <rect width="320" height="190" fill="#c8e8f5"/>
+            <!-- Globe/world -->
+            <circle cx="160" cy="100" r="70" fill="#1a6b8a" opacity="0.25"/>
+            <circle cx="160" cy="100" r="70" stroke="#1a6b8a" stroke-width="2" fill="none" opacity="0.5"/>
+            <!-- Meridians -->
+            <ellipse cx="160" cy="100" rx="40" ry="70" stroke="#1a6b8a" stroke-width="1" fill="none" opacity="0.4"/>
+            <ellipse cx="160" cy="100" rx="70" ry="30" stroke="#1a6b8a" stroke-width="1" fill="none" opacity="0.4"/>
+            <!-- Africa shape simplified -->
+            <path d="M145,55 Q165,52 172,65 Q180,75 178,92 Q182,110 175,125 Q168,142 160,148 Q152,142 148,128 Q138,110 140,92 Q138,75 145,55 Z" fill="#27ae60" opacity="0.7"/>
+            <!-- Connection lines (diaspora) -->
+            <line x1="160" y1="80" x2="80" y2="45" stroke="#d4a843" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.7"/>
+            <line x1="160" y1="80" x2="245" y2="50" stroke="#d4a843" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.7"/>
+            <line x1="160" y1="100" x2="55" y2="100" stroke="#d4a843" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.7"/>
+            <circle cx="80" cy="45" r="5" fill="#d4a843"/>
+            <circle cx="245" cy="50" r="5" fill="#d4a843"/>
+            <circle cx="55" cy="100" r="5" fill="#d4a843"/>
+            <!-- Heart at center -->
+            <text x="152" y="105" font-size="16">🏠</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🌍</div>
+          <h3 class="lang-fr">Diaspora & Alliés</h3>
+          <h3 class="lang-en">Diaspora & Allies</h3>
+          <p class="lang-fr">La communauté Yasuku s'étend à travers la France, la Belgique, l'Amérique du Nord et au-delà. Rejoignez le réseau de préservation culturelle.</p>
+          <p class="lang-en">The Yasuku community extends across France, Belgium, North America and beyond. Join the cultural preservation network.</p>
+          <span class="card-link lang-fr">Se connecter →</span>
+          <span class="card-link lang-en">Connect →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROVERB ===== -->
+<div class="proverb-block">
+  <div class="proverb-icon">〰️</div>
+  <p class="proverb-text lang-fr">« Les Bakoko sont venus avec le fleuve — et le fleuve ne les a pas oubliés. »</p>
+  <p class="proverb-text lang-en">"The Bakoko came with the river — and the river has not forgotten them."</p>
+  <p class="proverb-attr lang-fr">— Proverbe Elog Mpoo / Tradition orale Bakoko</p>
+  <p class="proverb-attr lang-en">— Elog Mpoo proverb / Bakoko oral tradition</p>
+</div>
+
+<!-- ===== RIVER LIFE PHOTOS ===== -->
+<section style="background:var(--light-bg)">
+  <div class="section-inner">
+    <div class="fade-in">
+      <span class="section-tag lang-fr">La vie sur le fleuve</span>
+      <span class="section-tag lang-en">Life on the river</span>
+      <h2 class="section-title lang-fr">La Sanaga au cœur de tout</h2>
+      <h2 class="section-title lang-en">The Sanaga at the heart of everything</h2>
+      <div class="section-divider"></div>
+      <p class="section-lead lang-fr">Le fleuve n'est pas seulement une frontière géographique — c'est l'âme du peuple Yasuku. Pêche, commerce, cérémonie, passage : tout commence et finit au bord de l'eau.</p>
+      <p class="section-lead lang-en">The river is not merely a geographic boundary — it is the soul of the Yasuku people. Fishing, trade, ceremony, passage: everything begins and ends at the water's edge.</p>
+    </div>
+
+    <div class="photo-grid fade-in">
+      <!-- Photo 1: Morning fishing -->
+      <div class="photo-card">
+        <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg">
+          <rect width="360" height="270" fill="#b8dcea"/>
+          <!-- Early morning sky -->
+          <defs>
+            <linearGradient id="dawn" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f9c784"/>
+              <stop offset="40%" stop-color="#c8e8f5"/>
+              <stop offset="100%" stop-color="#a0cfe0"/>
+            </linearGradient>
+          </defs>
+          <rect width="360" height="270" fill="url(#dawn)"/>
+          <!-- Water -->
+          <rect x="0" y="165" width="360" height="105" fill="#2980b9" opacity="0.8"/>
+          <path d="M0,162 Q90,148 180,162 Q270,176 360,158 L360,270 L0,270 Z" fill="#1f6fa3"/>
+          <!-- Ripples -->
+          <ellipse cx="100" cy="180" rx="40" ry="6" fill="none" stroke="#5dade2" stroke-width="1.5" opacity="0.4"/>
+          <ellipse cx="100" cy="180" rx="60" ry="9" fill="none" stroke="#5dade2" stroke-width="1" opacity="0.25"/>
+          <!-- Mist on water -->
+          <rect x="0" y="158" width="360" height="20" fill="white" opacity="0.15"/>
+          <!-- Fisherman standing in canoe with long pole net -->
+          <path d="M120,162 Q180,150 240,162 Q232,174 128,174 Z" fill="#6b4010"/>
+          <!-- Standing fisherman -->
+          <rect x="172" y="134" width="10" height="28" rx="3" fill="#3d1f0a"/>
+          <circle cx="177" cy="130" r="8" fill="#3d1f0a"/>
+          <!-- Net pole -->
+          <line x1="177" y1="130" x2="220" y2="100" stroke="#5c3808" stroke-width="2.5"/>
+          <path d="M220,100 Q248,108 245,130 Q232,140 215,135 Z" stroke="#888" stroke-width="1.2" fill="rgba(255,255,255,0.15)"/>
+          <!-- Rising sun -->
+          <circle cx="320" cy="40" r="30" fill="#f5d76e" opacity="0.7"/>
+          <circle cx="320" cy="40" r="18" fill="#f0c020"/>
+          <!-- Sun rays -->
+          <line x1="320" y1="8" x2="320" y2="2" stroke="#f0c020" stroke-width="2"/>
+          <line x1="342" y1="18" x2="346" y2="13" stroke="#f0c020" stroke-width="2"/>
+          <!-- Sun reflection on water -->
+          <path d="M290,175 Q320,165 350,175 Q320,185 290,175 Z" fill="#f5d76e" opacity="0.3"/>
+        </svg>
+        <div class="photo-caption lang-fr">Pêche au lever du soleil sur la Sanaga</div>
+        <div class="photo-caption lang-en">Fishing at sunrise on the Sanaga</div>
+      </div>
+
+      <!-- Photo 2: Women at river -->
+      <div class="photo-card">
+        <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg">
+          <rect width="360" height="270" fill="#c0e2f0"/>
+          <rect x="0" y="155" width="360" height="115" fill="#2980b9" opacity="0.65"/>
+          <path d="M0,150 Q90,138 180,150 Q270,162 360,146 L360,270 L0,270 Z" fill="#1a6b8a"/>
+          <!-- Riverbank -->
+          <path d="M0,145 Q60,130 120,142 Q180,128 240,138 Q300,122 360,135 L360,270 L0,270 Z" fill="#5da05d" opacity="0.5"/>
+          <!-- Rocks -->
+          <ellipse cx="60" cy="148" rx="22" ry="10" fill="#8b9198"/>
+          <ellipse cx="300" cy="150" rx="18" ry="8" fill="#6b7280"/>
+          <!-- Woman 1: carrying water jug on head -->
+          <circle cx="130" cy="110" r="9" fill="#3d1f0a"/>
+          <ellipse cx="130" cy="124" rx="9" ry="13" fill="#e74c3c"/>
+          <!-- Jug on head -->
+          <ellipse cx="130" cy="100" rx="7" ry="9" fill="#c8902a"/>
+          <!-- Woman 2: washing clothes -->
+          <circle cx="190" cy="140" r="8" fill="#3d1f0a"/>
+          <ellipse cx="190" cy="152" rx="8" ry="11" fill="#9b59b6"/>
+          <!-- Cloth on rock -->
+          <path d="M75,148 Q90,140 105,148" stroke="#4fc3f7" stroke-width="4" fill="none" opacity="0.7"/>
+          <!-- Woman 3: with baby on back -->
+          <circle cx="250" cy="118" r="9" fill="#3d1f0a"/>
+          <ellipse cx="250" cy="132" rx="9" ry="13" fill="#f39c12"/>
+          <!-- Baby on back (smaller circle) -->
+          <circle cx="258" cy="122" r="6" fill="#3d1f0a"/>
+          <!-- Palms -->
+          <line x1="38" y1="90" x2="42" y2="145" stroke="#5c3808" stroke-width="3.5"/>
+          <path d="M42,90 Q25,75 12,78 Q24,85 26,92 Q38,78 50,84 Q56,70 44,73 Q50,80 42,90 Z" fill="#27ae60"/>
+          <line x1="330" y1="85" x2="333" y2="140" stroke="#5c3808" stroke-width="3.5"/>
+          <path d="M333,85 Q316,70 303,73 Q315,80 317,87 Q329,73 341,79 Q347,65 335,68 Q341,75 333,85 Z" fill="#2ecc71"/>
+        </svg>
+        <div class="photo-caption lang-fr">Femmes au bord du fleuve, activités quotidiennes</div>
+        <div class="photo-caption lang-en">Women by the river, daily activities</div>
+      </div>
+
+      <!-- Photo 3: Ceremony -->
+      <div class="photo-card">
+        <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg">
+          <rect width="360" height="270" fill="#b0d8e8"/>
+          <!-- Evening sky -->
+          <rect width="360" height="270" fill="#1a3d4f"/>
+          <!-- River glow -->
+          <rect x="0" y="180" width="360" height="90" fill="#0d3b5e"/>
+          <path d="M0,178 Q90,165 180,178 Q270,191 360,172 L360,270 L0,270 Z" fill="#0a2d44"/>
+          <!-- Fire reflections on water -->
+          <ellipse cx="180" cy="210" rx="50" ry="15" fill="#e07020" opacity="0.2"/>
+          <!-- Ceremonial fire -->
+          <ellipse cx="180" cy="180" rx="20" ry="6" fill="#7d2d00"/>
+          <path d="M168,180 Q180,148 192,180 Z" fill="#e07020"/>
+          <path d="M172,180 Q181,155 190,180 Z" fill="#f0a030"/>
+          <path d="M175,180 Q181,162 187,180 Z" fill="#f5d050"/>
+          <!-- Flames glow -->
+          <ellipse cx="180" cy="165" rx="25" ry="18" fill="#e07020" opacity="0.2"/>
+          <!-- Dancers (silhouettes) -->
+          <circle cx="120" cy="170" r="8" fill="#1a1a1a"/>
+          <ellipse cx="120" cy="182" rx="8" ry="11" fill="#1a1a1a"/>
+          <!-- Arms raised in dance -->
+          <line x1="112" y1="175" x2="98" y2="162" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+          <line x1="128" y1="175" x2="138" y2="160" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="240" cy="170" r="8" fill="#1a1a1a"/>
+          <ellipse cx="240" cy="182" rx="8" ry="11" fill="#1a1a1a"/>
+          <line x1="232" y1="174" x2="218" y2="161" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+          <line x1="248" y1="174" x2="262" y2="162" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="180" cy="165" r="7" fill="#1a1a1a"/>
+          <ellipse cx="180" cy="176" rx="7" ry="10" fill="#1a1a1a"/>
+          <!-- Stars -->
+          <circle cx="50" cy="40" r="1.5" fill="#fff" opacity="0.9"/>
+          <circle cx="90" cy="20" r="2" fill="#fff"/>
+          <circle cx="150" cy="35" r="1.5" fill="#fff" opacity="0.8"/>
+          <circle cx="260" cy="15" r="2" fill="#fff"/>
+          <circle cx="300" cy="45" r="1.5" fill="#fff"/>
+          <circle cx="340" cy="25" r="1.5" fill="#fff" opacity="0.7"/>
+          <!-- Moon -->
+          <circle cx="55" cy="65" r="20" fill="#f5e642" opacity="0.6"/>
+          <circle cx="62" cy="60" r="14" fill="#1a3d4f"/>
+        </svg>
+        <div class="photo-caption lang-fr">Cérémonie de la Fête Mpoo sur les berges de la Sanaga</div>
+        <div class="photo-caption lang-en">Fête Mpoo ceremony on the Sanaga riverbanks</div>
+      </div>
+
+      <!-- Photo 4: Children -->
+      <div class="photo-card">
+        <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg">
+          <rect width="360" height="270" fill="#c5e3f0"/>
+          <defs>
+            <linearGradient id="afternoon" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#87ceeb"/>
+              <stop offset="100%" stop-color="#c8e8f5"/>
+            </linearGradient>
+          </defs>
+          <rect width="360" height="270" fill="url(#afternoon)"/>
+          <rect x="0" y="168" width="360" height="102" fill="#2980b9" opacity="0.7"/>
+          <path d="M0,162 Q60,150 120,162 Q180,174 240,158 Q300,148 360,162 L360,270 L0,270 Z" fill="#1a6b8a"/>
+          <!-- Sandy bank -->
+          <path d="M0,155 Q90,140 180,152 Q270,138 360,150 L360,270 L0,270 Z" fill="#e8d5a0"/>
+          <!-- Children playing (3 kids) -->
+          <!-- Child 1: jumping -->
+          <circle cx="100" cy="138" r="8" fill="#3d1f0a"/>
+          <ellipse cx="100" cy="152" rx="7" ry="10" fill="#e74c3c"/>
+          <line x1="93" y1="156" x2="85" y2="168" stroke="#3d1f0a" stroke-width="3" stroke-linecap="round"/>
+          <line x1="107" y1="156" x2="114" y2="168" stroke="#3d1f0a" stroke-width="3" stroke-linecap="round"/>
+          <!-- Child 2: running -->
+          <circle cx="180" cy="132" r="8" fill="#3d1f0a"/>
+          <ellipse cx="180" cy="146" rx="7" ry="10" fill="#27ae60"/>
+          <line x1="173" y1="150" x2="162" y2="162" stroke="#3d1f0a" stroke-width="3" stroke-linecap="round"/>
+          <line x1="187" y1="148" x2="198" y2="160" stroke="#3d1f0a" stroke-width="3" stroke-linecap="round"/>
+          <!-- Arms in motion -->
+          <line x1="173" y1="142" x2="162" y2="136" stroke="#3d1f0a" stroke-width="3" stroke-linecap="round"/>
+          <line x1="187" y1="140" x2="197" y2="134" stroke="#3d1f0a" stroke-width="3" stroke-linecap="round"/>
+          <!-- Child 3: holding fish -->
+          <circle cx="270" cy="136" r="8" fill="#3d1f0a"/>
+          <ellipse cx="270" cy="150" rx="7" ry="10" fill="#f39c12"/>
+          <!-- Fish -->
+          <path d="M278,130 Q292,125 295,130 Q292,135 278,132 Z" fill="#aedcf0"/>
+          <line x1="280" y1="131" x2="279" y2="140" stroke="#3d1f0a" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Toy boat in water -->
+          <path d="M40,180 Q55,175 70,180 Q65,186 45,186 Z" fill="#c8902a"/>
+          <line x1="55" y1="175" x2="55" y2="165" stroke="#5c3808" stroke-width="1.5"/>
+          <path d="M55,165 L68,168 L55,170 Z" fill="#e74c3c" opacity="0.8"/>
+          <!-- Clouds -->
+          <ellipse cx="280" cy="40" rx="40" ry="20" fill="white" opacity="0.6"/>
+          <ellipse cx="300" cy="35" rx="30" ry="18" fill="white" opacity="0.7"/>
+          <ellipse cx="60" cy="50" rx="35" ry="18" fill="white" opacity="0.5"/>
+        </svg>
+        <div class="photo-caption lang-fr">Enfants Yasuku jouant au bord de la Sanaga</div>
+        <div class="photo-caption lang-en">Yasuku children playing by the Sanaga</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DIASPORA SECTION ===== -->
+<section class="diaspora-section" id="diaspora">
+  <div class="section-inner">
+    <div class="fade-in">
+      <span class="section-tag">
+        <span class="lang-fr">Diaspora & Alliés</span>
+        <span class="lang-en">Diaspora & Allies</span>
+      </span>
+      <h2 class="section-title lang-fr">Yasuku partout dans le monde</h2>
+      <h2 class="section-title lang-en">Yasuku across the world</h2>
+      <div class="section-divider"></div>
+      <p class="section-lead lang-fr">La communauté Yasuku s'étend bien au-delà d'Edéa. Des communautés Bakoko importantes vivent en France, en Belgique, au Canada, aux États-Unis et à travers l'Afrique. Ce site est votre maison numérique.</p>
+      <p class="section-lead lang-en">The Yasuku community extends far beyond Edéa. Significant Bakoko communities live in France, Belgium, Canada, the United States, and across Africa. This site is your digital home.</p>
+    </div>
+
+    <div class="connect-grid fade-in">
+      <div class="connect-card">
+        <div class="icon">🧬</div>
+        <h4 class="lang-fr">Généalogie</h4>
+        <h4 class="lang-en">Genealogy</h4>
+        <p class="lang-fr">Retrouvez votre place dans l'arbre généalogique des Elog Mpoo. De Mpoo à Lisukè à vous — trois générations, un fil ininterrompu.</p>
+        <p class="lang-en">Find your place in the Elog Mpoo genealogical tree. From Mpoo to Lisukè to you — three generations, an unbroken thread.</p>
+      </div>
+      <div class="connect-card">
+        <div class="icon">🎵</div>
+        <h4 class="lang-fr">Musique & Chants</h4>
+        <h4 class="lang-en">Music & Songs</h4>
+        <p class="lang-fr">Le Ngoso (poésie chantée), l'Ondende (poésie avec instrument à cordes), les chants du Njéé — la bande son d'une civilisation.</p>
+        <p class="lang-en">Ngoso (sung poetry), Ondende (poetry with strings), Njéé society chants — the soundtrack of a civilization.</p>
+      </div>
+      <div class="connect-card">
+        <div class="icon">📅</div>
+        <h4 class="lang-fr">Fête Mpoo</h4>
+        <h4 class="lang-en">Fête Mpoo</h4>
+        <p class="lang-fr">Chaque 8 décembre, tous les clans Elog Mpoo se réunissent sur les rives de la Sanaga. La 75ème édition (2023) a vu Ekom Adrienne du Canton Yassoukou couronnée Miss Mpo'o.</p>
+        <p class="lang-en">Every December 8th, all Elog Mpoo clans gather on the Sanaga riverbanks. The 75th edition (2023) saw Ekom Adrienne of Canton Yassoukou crowned Miss Mpo'o.</p>
+      </div>
+      <div class="connect-card">
+        <div class="icon">📚</div>
+        <h4 class="lang-fr">Archives & Recherche</h4>
+        <h4 class="lang-en">Archives & Research</h4>
+        <p class="lang-fr">Accédez aux sources académiques, aux archives coloniales allemandes (Bundesarchiv R 1001), et aux ressources orales de peuplesawa.com et bakoko.org.</p>
+        <p class="lang-en">Access academic sources, German colonial archives (Bundesarchiv R 1001), and oral resources at peuplesawa.com and bakoko.org.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECOND PROVERB ===== -->
+<div class="proverb-block" style="background:linear-gradient(135deg,#1a3d1a,#0a2d44)">
+  <p class="proverb-text lang-fr">« L'eau de la chute ne retourne jamais à sa source » — c'est ainsi que Mpoo, notre ancêtre, décrivait son autorité : irrévocable, comme le courant de la Sanaga.</p>
+  <p class="proverb-text lang-en">"The water of the fall never returns to its source" — so Mpoo, our ancestor, described his authority: irrevocable, like the current of the Sanaga.</p>
+  <p class="proverb-attr lang-fr">— Signification du nom MPOO : <em>Lipoo Li Mingenda Mi Bet Ben</em></p>
+  <p class="proverb-attr lang-en">— Meaning of the name MPOO: <em>Lipoo Li Mingenda Mi Bet Ben</em></p>
+</div>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <svg width="40" height="40" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="200" rx="20" fill="#0d3b5e"/>
+          <ellipse cx="100" cy="158" rx="92" ry="38" fill="#2980b9" opacity="0.7"/>
+          <path d="M25,144 Q100,124 175,144 Q162,162 38,162 Z" fill="#7d4f0c"/>
+          <ellipse cx="96" cy="134" rx="11" ry="12" fill="#27ae60"/>
+          <circle cx="88" cy="118" r="11" fill="#3d1f0a"/>
+          <line x1="118" y1="120" x2="128" y2="148" stroke="#8b5e2a" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <h3>Yasuku.org</h3>
+      </div>
+      <p class="lang-fr">Site officiel du Canton Yassoukou, peuple <span class="footer-gold">Elog Mpoo (Bakoko)</span>, Littoral Cameroun. Mémoire vivante, langue préservée, avenir assuré.</p>
+      <p class="lang-en">Official site of Canton Yassoukou, <span class="footer-gold">Elog Mpoo (Bakoko)</span> people, Littoral Cameroon. Living memory, preserved language, assured future.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="lang-fr">Explorer</h4>
+      <h4 class="lang-en">Explore</h4>
+      <ul>
+        <li><a href="history.html"><span class="lang-fr">Histoire</span><span class="lang-en">History</span></a></li>
+        <li><a href="community.html"><span class="lang-fr">Communauté</span><span class="lang-en">Community</span></a></li>
+        <li><a href="learn.html"><span class="lang-fr">Apprendre</span><span class="lang-en">Learn</span></a></li>
+        <li><a href="stories.html"><span class="lang-fr">Récits</span><span class="lang-en">Stories</span></a></li>
+        <li><a href="games.html"><span class="lang-fr">Jeux</span><span class="lang-en">Games</span></a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="lang-fr">Ressources</h4>
+      <h4 class="lang-en">Resources</h4>
+      <ul>
+        <li><a href="https://peuplesawa.com" target="_blank" rel="noopener">peuplesawa.com</a></li>
+        <li><a href="https://bakoko.org" target="_blank" rel="noopener">bakoko.org</a></li>
+        <li><a href="https://www.omniglot.com/writing/kogo.htm" target="_blank" rel="noopener">Omniglot Kogo</a></li>
+        <li><a href="https://fr.wikipedia.org/wiki/Ngog_Lituba" target="_blank" rel="noopener">Ngog Lituba</a></li>
+        <li><a href="https://tamtamdumboa.com" target="_blank" rel="noopener">TamTamDuMboa</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="lang-fr">Canton</h4>
+      <h4 class="lang-en">Canton</h4>
+      <ul>
+        <li><span style="color:rgba(255,255,255,0.5);font-size:.84rem">Edéa 1, Sanaga-Maritime</span></li>
+        <li><span style="color:rgba(255,255,255,0.5);font-size:.84rem">Code: 5.3.2.3.</span></li>
+        <li><span style="color:rgba(255,255,255,0.5);font-size:.84rem">~1 765 habitants</span></li>
+        <li><span style="color:rgba(255,255,255,0.5);font-size:.84rem">Région du Littoral</span></li>
+        <li><span style="color:rgba(255,255,255,0.5);font-size:.84rem">Cameroun 🇨🇲</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="lang-fr">© 2025 Yasuku.org — <span class="footer-gold">13 Villages, Un Peuple, Une Histoire… et le Fleuve</span></span>
+    <span class="lang-en">© 2025 Yasuku.org — <span class="footer-gold">13 Villages, One People, One History… and the River</span></span>
+    <div class="footer-bottom-links">
+      <a href="#" class="lang-fr">Accessibilité</a>
+      <a href="#" class="lang-en">Accessibility</a>
+      <a href="#" class="lang-fr">Contact</a>
+      <a href="#" class="lang-en">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<!-- Fix grid display for about section on mobile -->
+<style>
+  @media(max-width:760px){
+    .about-grid{grid-template-columns:1fr!important;}
+  }
+</style>
+</body>
+</html>

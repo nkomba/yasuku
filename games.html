@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Jeux traditionnels Yasuku — Minkala (Mancala), jeu des 13 clans, course de pirogues. Pour enfants et diaspora."/>
+  <title>Jeux Traditionnels — Yasuku.org · Canton Yassoukou</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="lang-fr">
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <svg width="46" height="46" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="border-radius:10px">
+      <rect width="200" height="200" rx="28" fill="#eef6fc"/>
+      <ellipse cx="100" cy="158" rx="92" ry="38" fill="#2980b9"/>
+      <path d="M8,148 Q55,132 100,148 Q145,164 192,148 L192,200 L8,200 Z" fill="#1f6fa3"/>
+      <path d="M25,144 Q100,124 175,144 Q162,162 38,162 Z" fill="#7d4f0c"/>
+      <ellipse cx="96" cy="134" rx="11" ry="12" fill="#27ae60"/>
+      <line x1="118" y1="120" x2="128" y2="148" stroke="#8b5e2a" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="88" cy="118" r="11" fill="#3d1f0a"/>
+    </svg>
+    <div>
+      <span class="nav-logo-text">Yasuku.org</span>
+      <span class="nav-logo-sub">Canton Yassoukou · Cameroun</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a></li>
+    <li><a href="history.html"><span class="lang-fr">Histoire</span><span class="lang-en">History</span></a></li>
+    <li><a href="community.html"><span class="lang-fr">Communauté</span><span class="lang-en">Community</span></a></li>
+    <li><a href="learn.html"><span class="lang-fr">Apprendre</span><span class="lang-en">Learn</span></a></li>
+    <li><a href="stories.html"><span class="lang-fr">Récits</span><span class="lang-en">Stories</span></a></li>
+    <li><a href="games.html" class="active"><span class="lang-fr">Jeux</span><span class="lang-en">Games</span></a></li>
+    <li><a href="about.html"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a></li>
+    <button class="lang-btn">English</button>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+
+<!-- PAGE HERO -->
+<div class="page-hero" style="background:linear-gradient(160deg,#1a3d1a 0%,#2d6a2d 50%,#1a6b8a 100%)">
+  <span class="section-tag" style="background:rgba(255,255,255,0.12);color:var(--gold)">
+    <span class="lang-fr">Pour tous</span><span class="lang-en">For everyone</span>
+  </span>
+  <h1 class="lang-fr">Jeux Traditionnels Yasuku</h1>
+  <h1 class="lang-en">Traditional Yasuku Games</h1>
+  <p class="lang-fr">Des jeux qui enseignent l'histoire, la géographie et les valeurs du peuple Yasuku — pour les enfants, les familles et la diaspora.</p>
+  <p class="lang-en">Games that teach history, geography, and the values of the Yasuku people — for children, families, and the diaspora.</p>
+</div>
+
+<!-- INTRO -->
+<section style="background:var(--light-bg);padding:3rem 2rem">
+  <div class="section-inner text-center">
+    <p class="fade-in lang-fr" style="max-width:680px;margin:0 auto;font-size:1.05rem;color:var(--text-light);line-height:1.8">
+      Jouer, c'est aussi apprendre. Dans la tradition des Elog Mpoo, les jeux d'enfants transmettaient des savoirs sur le fleuve, les clans, les étoiles et les techniques de pêche. Voici trois jeux interactifs inspirés de cette tradition.
+    </p>
+    <p class="fade-in lang-en" style="max-width:680px;margin:0 auto;font-size:1.05rem;color:var(--text-light);line-height:1.8">
+      To play is also to learn. In Elog Mpoo tradition, children's games transmitted knowledge about the river, the clans, the stars, and fishing techniques. Here are three interactive games inspired by this tradition.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     GAME 1: MINKALA (MANCALA)
+     ============================================================ -->
+<section style="background:var(--white)">
+  <div class="section-inner">
+    <div class="game-card fade-in">
+      <div class="game-header">
+        <div class="game-icon">🌰</div>
+        <div class="game-header-text">
+          <h3 class="lang-fr">Minkala — Le Jeu des Graines</h3>
+          <h3 class="lang-en">Minkala — The Seed Game</h3>
+          <span class="game-badge lang-fr">2 joueurs · Stratégie · Tout âge</span>
+          <span class="game-badge lang-en">2 players · Strategy · All ages</span>
+        </div>
+      </div>
+      <div class="game-body">
+        <p class="lang-fr">Le Minkala est la version Elog Mpoo du Mancala — un jeu de stratégie africain millénaire joué avec des graines ou des cailloux dans des trous creusés dans la terre ou sur un plateau en bois. Dans les villages Yasuku, on le jouait sous les arbres après la pêche. Chaque joueur essaie de récolter plus de graines que son adversaire.</p>
+        <p class="lang-en">Minkala is the Elog Mpoo version of Mancala — an ancient African strategy game played with seeds or stones in holes dug in the earth or carved on a wooden board. In Yasuku villages, it was played under trees after fishing. Each player tries to harvest more seeds than their opponent.</p>
+
+        <h4 class="lang-fr">🎯 Règles</h4>
+        <h4 class="lang-en">🎯 Rules</h4>
+        <ul class="lang-fr">
+          <li><strong>Joueur 1</strong> contrôle la rangée du <strong>bas</strong> (trous B1–B6) et le magasin de gauche.</li>
+          <li><strong>Joueur 2</strong> contrôle la rangée du <strong>haut</strong> (trous T1–T6) et le magasin de droite.</li>
+          <li>Cliquez sur un de vos trous pour distribuer ses graines dans le sens des aiguilles d'une montre.</li>
+          <li>Si votre dernière graine tombe dans votre magasin → <strong>tour bonus !</strong></li>
+          <li>Si votre dernière graine tombe dans un de vos trous vides (et que le trou opposé n'est pas vide) → vous capturez les deux.</li>
+          <li>Le jeu se termine quand une rangée est vide. Celui qui a le plus de graines gagne.</li>
+        </ul>
+        <ul class="lang-en">
+          <li><strong>Player 1</strong> controls the <strong>bottom</strong> row (holes B1–B6) and the left store.</li>
+          <li><strong>Player 2</strong> controls the <strong>top</strong> row (holes T1–T6) and the right store.</li>
+          <li>Click one of your holes to distribute its seeds counter-clockwise.</li>
+          <li>If your last seed lands in your store → <strong>bonus turn!</strong></li>
+          <li>If your last seed lands in one of your empty holes (and opposite hole isn't empty) → you capture both.</li>
+          <li>Game ends when one row is empty. Most seeds wins.</li>
+        </ul>
+
+        <!-- MANCALA BOARD -->
+        <div style="max-width:640px;margin:1.5rem auto">
+          <div style="display:flex;justify-content:space-between;padding:0 .5rem;margin-bottom:.25rem">
+            <span style="font-size:.7rem;font-weight:700;color:var(--river-mid);letter-spacing:.1em">
+              <span class="lang-fr">◄ J1 (bas)</span><span class="lang-en">◄ P1 (bottom)</span>
+            </span>
+            <span style="font-size:.7rem;font-weight:700;color:var(--sunset);letter-spacing:.1em">
+              <span class="lang-fr">J2 (haut) ►</span><span class="lang-en">P2 (top) ►</span>
+            </span>
+          </div>
+        <div class="mancala-board" id="mancalaBoard">
+          <!-- Player 2 store (right) -->
+          <div class="mancala-store" id="store2">0</div>
+
+          <div class="mancala-holes">
+            <!-- Top row: Player 2 (displayed right→left from P2's perspective) -->
+            <div class="mancala-row">
+              <div class="hole-wrap"><div class="hole-lbl">T1</div><div class="mancala-hole" id="pit-t0">4</div></div>
+              <div class="hole-wrap"><div class="hole-lbl">T2</div><div class="mancala-hole" id="pit-t1">4</div></div>
+              <div class="hole-wrap"><div class="hole-lbl">T3</div><div class="mancala-hole" id="pit-t2">4</div></div>
+              <div class="hole-wrap"><div class="hole-lbl">T4</div><div class="mancala-hole" id="pit-t3">4</div></div>
+              <div class="hole-wrap"><div class="hole-lbl">T5</div><div class="mancala-hole" id="pit-t4">4</div></div>
+              <div class="hole-wrap"><div class="hole-lbl">T6</div><div class="mancala-hole" id="pit-t5">4</div></div>
+            </div>
+            <!-- Bottom row: Player 1 (left→right) -->
+            <div class="mancala-row">
+              <div class="hole-wrap"><div class="mancala-hole" id="pit-b0">4</div><div class="hole-lbl">B1</div></div>
+              <div class="hole-wrap"><div class="mancala-hole" id="pit-b1">4</div><div class="hole-lbl">B2</div></div>
+              <div class="hole-wrap"><div class="mancala-hole" id="pit-b2">4</div><div class="hole-lbl">B3</div></div>
+              <div class="hole-wrap"><div class="mancala-hole" id="pit-b3">4</div><div class="hole-lbl">B4</div></div>
+              <div class="hole-wrap"><div class="mancala-hole" id="pit-b4">4</div><div class="hole-lbl">B5</div></div>
+              <div class="hole-wrap"><div class="mancala-hole" id="pit-b5">4</div><div class="hole-lbl">B6</div></div>
+            </div>
+          </div>
+
+          <!-- Player 1 store (left) -->
+          <div class="mancala-store" id="store1">0</div>
+        </div>
+        </div>
+
+        <p class="game-msg" id="mancalaMsg"></p>
+        <div class="mancala-controls">
+          <button class="btn-small" id="mancalaReset">
+            <span class="lang-fr">↺ Recommencer</span>
+            <span class="lang-en">↺ New game</span>
+          </button>
+        </div>
+
+        <div class="note lang-fr" style="margin-top:1.5rem">
+          🌍 Le Mancala est l'un des plus vieux jeux du monde. Des versions similaires ont été trouvées en Égypte ancienne — notre terre d'origine selon la tradition Elog Mpoo.
+        </div>
+        <div class="note lang-en" style="margin-top:1.5rem">
+          🌍 Mancala is one of the world's oldest games. Similar versions have been found in ancient Egypt — our land of origin according to Elog Mpoo tradition.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GAME 2: MEMORY — 13 CLANS
+     ============================================================ -->
+<section style="background:var(--river-mist)">
+  <div class="section-inner">
+    <div class="game-card fade-in">
+      <div class="game-header" style="background:linear-gradient(135deg,#0d3b5e,#1a6b8a)">
+        <div class="game-icon">🧠</div>
+        <div class="game-header-text">
+          <h3 class="lang-fr">Les 13 Clans — Jeu de Mémoire</h3>
+          <h3 class="lang-en">The 13 Clans — Memory Game</h3>
+          <span class="game-badge lang-fr">1 joueur · Mémoire · 6 ans+</span>
+          <span class="game-badge lang-en">1 player · Memory · 6+</span>
+        </div>
+      </div>
+      <div class="game-body">
+        <p class="lang-fr">Associez chaque clan Elog Mpoo à son ancêtre fondateur. Retournez deux cartes à la fois — si elles correspondent (clan + ancêtre), elles restent visibles. Trouvez toutes les paires en un minimum de coups !</p>
+        <p class="lang-en">Match each Elog Mpoo clan to its founding ancestor. Turn two cards at a time — if they match (clan + ancestor), they stay visible. Find all pairs in as few moves as possible!</p>
+
+        <p class="mem-score" id="memScore">
+          <span class="lang-fr">Paires trouvées : 0/8 — Coups : 0</span>
+          <span class="lang-en">Pairs found: 0/8 — Moves: 0</span>
+        </p>
+
+        <div class="memory-grid" id="memoryGrid">
+          <!-- JS fills this -->
+        </div>
+
+        <p style="text-align:center;font-size:.85rem;color:var(--forest-mid);font-weight:600;min-height:1.5rem" id="memMsg"></p>
+
+        <div style="text-align:center;margin-top:1rem">
+          <button class="btn-small" id="memoryReset" style="background:var(--river-deep)">
+            <span class="lang-fr">↺ Mélanger</span>
+            <span class="lang-en">↺ Shuffle</span>
+          </button>
+        </div>
+
+        <div class="note lang-fr" style="margin-top:1.5rem">
+          📖 Ce jeu vous aide à mémoriser les 13 clans Elog Mpoo et leurs ancêtres. Une fois maîtrisé, essayez de les réciter dans l'ordre généalogique !
+        </div>
+        <div class="note lang-en" style="margin-top:1.5rem">
+          📖 This game helps you memorize the 13 Elog Mpoo clans and their ancestors. Once mastered, try reciting them in genealogical order!
+        </div>
+
+        <!-- Reference table -->
+        <details style="margin-top:1.5rem">
+          <summary style="cursor:pointer;font-weight:700;color:var(--river-mid);font-size:.9rem;padding:.5rem 0">
+            <span class="lang-fr">📋 Voir le tableau de référence complet</span>
+            <span class="lang-en">📋 Show the full reference table</span>
+          </summary>
+          <div class="table-wrap" style="margin-top:1rem">
+            <table>
+              <thead>
+                <tr>
+                  <th><span class="lang-fr">Clan</span><span class="lang-en">Clan</span></th>
+                  <th><span class="lang-fr">Ancêtre</span><span class="lang-en">Ancestor</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="highlight-row"><td>Yasuku ⭐</td><td>Lisukè</td></tr>
+                <tr><td>Adiè</td><td>Likandè</td></tr>
+                <tr><td>Yakalak</td><td>Kalake (Mpam)</td></tr>
+                <tr><td>Yawanda</td><td>Ekoum</td></tr>
+                <tr><td>Ndonga</td><td>Mbambo</td></tr>
+                <tr><td>Yabii</td><td>Bii</td></tr>
+                <tr><td>Ndogbesol</td><td>Besol</td></tr>
+                <tr><td>Bisoo</td><td>Nsoo</td></tr>
+                <tr><td>Yapeke</td><td>Peke</td></tr>
+                <tr><td>Yabyan</td><td>Bwanè</td></tr>
+                <tr><td>Yapouma</td><td>Pomane</td></tr>
+                <tr><td>Badjob</td><td>Njob Mbang Ngue</td></tr>
+                <tr><td>Mban/Dibom</td><td>Oncle de Mpoo</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GAME 3: CANOE RACE
+     ============================================================ -->
+<section style="background:var(--white)">
+  <div class="section-inner">
+    <div class="game-card fade-in">
+      <div class="game-header" style="background:linear-gradient(135deg,#1a5c6a,#2980b9)">
+        <div class="game-icon">🛶</div>
+        <div class="game-header-text">
+          <h3 class="lang-fr">Course de Pirogues sur la Sanaga</h3>
+          <h3 class="lang-en">Canoe Race on the Sanaga</h3>
+          <span class="game-badge lang-fr">2 joueurs · Rapidité · Tout âge</span>
+          <span class="game-badge lang-en">2 players · Speed · All ages</span>
+        </div>
+      </div>
+      <div class="game-body">
+        <p class="lang-fr">Dans les villages Yasuku, les courses de pirogues sur la Sanaga étaient des moments de fierté et de compétition amicale. Chaque joueur pagaie en appuyant rapidement sur son bouton. Le premier à atteindre la ligne d'arrivée gagne !</p>
+        <p class="lang-en">In Yasuku villages, canoe races on the Sanaga were moments of pride and friendly competition. Each player paddles by pressing their button quickly. First to reach the finish line wins!</p>
+
+        <!-- Race track -->
+        <div class="race-track">
+          <!-- Wave background -->
+          <svg style="position:absolute;bottom:0;left:0;right:0;width:100%;height:50px" viewBox="0 0 700 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,25 Q87.5,0 175,25 Q262.5,50 350,25 Q437.5,0 525,25 Q612.5,50 700,25 L700,50 L0,50 Z" fill="rgba(255,255,255,0.15)"/>
+          </svg>
+          <!-- Ripple lines -->
+          <div style="position:absolute;top:20%;left:5%;right:15%;height:1px;background:rgba(255,255,255,0.2)"></div>
+          <div style="position:absolute;top:70%;left:5%;right:15%;height:1px;background:rgba(255,255,255,0.15)"></div>
+          <!-- Finish line -->
+          <div class="finish-line"></div>
+          <!-- Canoes -->
+          <div class="canoe-p1" id="canoe1" style="left:2%;font-size:1.8rem" title="Joueur 1 / Player 1">🛶</div>
+          <div class="canoe-p2" id="canoe2" style="left:2%;font-size:1.6rem" title="Joueur 2 / Player 2">🚣</div>
+        </div>
+
+        <p class="race-msg" id="raceMsg">Cliquez sur votre bouton pour pagayer !</p>
+
+        <div class="race-controls">
+          <button class="race-btn p1" id="raceBtn1">
+            🛶 <span class="lang-fr">Joueur 1 — Pagayez !</span>
+            <span class="lang-en">Player 1 — Paddle!</span>
+          </button>
+          <button class="race-btn p2" id="raceBtn2">
+            🚣 <span class="lang-fr">Joueur 2 — Pagayez !</span>
+            <span class="lang-en">Player 2 — Paddle!</span>
+          </button>
+          <button class="race-btn reset" id="raceReset">
+            ↺ <span class="lang-fr">Recommencer</span>
+            <span class="lang-en">Restart</span>
+          </button>
+        </div>
+
+        <div class="note lang-fr" style="margin-top:1.5rem">
+          🌊 La Sanaga est le fleuve le plus long du Cameroun (918 km). Les Yasuku vivent et pêchent sur ses rives depuis des générations. Le nom <em>Sanaga</em> vient de la langue locale et évoque la puissance de l'eau.
+        </div>
+        <div class="note lang-en" style="margin-top:1.5rem">
+          🌊 The Sanaga is Cameroon's longest river (918 km). The Yasuku have lived and fished on its banks for generations. The name <em>Sanaga</em> comes from the local language and evokes the power of water.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GAME 4: QUIZ — WHO AM I?
+     ============================================================ -->
+<section style="background:var(--river-mist)">
+  <div class="section-inner">
+    <div class="game-card fade-in">
+      <div class="game-header" style="background:linear-gradient(135deg,#5c2200,#8b4513)">
+        <div class="game-icon">❓</div>
+        <div class="game-header-text">
+          <h3 class="lang-fr">Qui suis-je ? — Quiz des Ancêtres</h3>
+          <h3 class="lang-en">Who Am I? — Ancestors Quiz</h3>
+          <span class="game-badge lang-fr">1 joueur · Culture · 8 ans+</span>
+          <span class="game-badge lang-en">1 player · Culture · 8+</span>
+        </div>
+      </div>
+      <div class="game-body">
+        <p class="lang-fr">Un quiz sur l'histoire, la culture et les valeurs des Elog Mpoo. Trouvez la bonne réponse parmi quatre propositions !</p>
+        <p class="lang-en">A quiz on the history, culture and values of the Elog Mpoo. Find the right answer among four choices!</p>
+
+        <div id="quizContainer" style="margin-top:1.5rem">
+          <!-- JS fills this -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLAY TOGETHER SECTION -->
+<div class="proverb-block" style="background:linear-gradient(135deg,#1a3d1a,#1a5c6a)">
+  <div class="proverb-icon">🎯</div>
+  <p class="proverb-text lang-fr">« Un peuple qui joue ensemble reste ensemble. Jouer, c'est transmettre. »</p>
+  <p class="proverb-text lang-en">"A people who play together stay together. To play is to pass down."</p>
+  <p class="proverb-attr lang-fr">— Tradition Elog Mpoo</p>
+  <p class="proverb-attr lang-en">— Elog Mpoo tradition</p>
+</div>
+
+<!-- PHYSICAL GAMES GUIDE -->
+<section style="background:var(--white)">
+  <div class="section-inner">
+    <div class="fade-in text-center" style="margin-bottom:2rem">
+      <span class="section-tag lang-fr">À jouer dehors</span>
+      <span class="section-tag lang-en">Play outside</span>
+      <h2 class="section-title lang-fr">Jeux à jouer au bord de l'eau</h2>
+      <h2 class="section-title lang-en">Games to play by the water</h2>
+      <div class="section-divider" style="margin:1rem auto"></div>
+    </div>
+    <div class="cards-grid fade-in">
+      <div class="card" style="cursor:default">
+        <div class="card-illustration">
+          <svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg">
+            <rect width="320" height="190" fill="#c8e8f5"/>
+            <rect x="0" y="125" width="320" height="65" fill="#2980b9" opacity="0.7"/>
+            <path d="M0,120 Q80,108 160,120 Q240,132 320,112 L320,190 L0,190 Z" fill="#1a6b8a"/>
+            <!-- Stone skipping illustration -->
+            <!-- Kids -->
+            <circle cx="80" cy="118" r="8" fill="#3d1f0a"/>
+            <ellipse cx="80" cy="129" rx="8" ry="10" fill="#e74c3c"/>
+            <!-- Arm throwing -->
+            <line x1="88" y1="122" x2="108" y2="112" stroke="#3d1f0a" stroke-width="3.5" stroke-linecap="round"/>
+            <!-- Skipping stones on water -->
+            <ellipse cx="140" cy="133" rx="5" ry="3" fill="#888" opacity="0.6"/>
+            <ellipse cx="175" cy="128" rx="4" ry="2.5" fill="#888" opacity="0.5"/>
+            <ellipse cx="205" cy="134" rx="3.5" ry="2" fill="#888" opacity="0.4"/>
+            <!-- Ripples -->
+            <ellipse cx="140" cy="133" rx="10" ry="4" fill="none" stroke="#5dade2" stroke-width="1.2" opacity="0.5"/>
+            <ellipse cx="175" cy="128" rx="8" ry="3.5" fill="none" stroke="#5dade2" stroke-width="1.2" opacity="0.4"/>
+            <ellipse cx="205" cy="134" rx="7" ry="3" fill="none" stroke="#5dade2" stroke-width="1.2" opacity="0.3"/>
+            <!-- Arc trajectory -->
+            <path d="M105,112 Q130,100 140,133" stroke="#e07020" stroke-width="1.5" stroke-dasharray="4,3" fill="none" opacity="0.6"/>
+            <path d="M140,130 Q160,115 175,128" stroke="#e07020" stroke-width="1.5" stroke-dasharray="4,3" fill="none" opacity="0.5"/>
+            <!-- Palm tree -->
+            <line x1="275" y1="90" x2="278" y2="135" stroke="#5c3808" stroke-width="3.5"/>
+            <path d="M278,90 Q261,75 249,78 Q260,85 262,92 Q273,78 284,84 Q289,70 278,73 Q283,80 278,90 Z" fill="#27ae60"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">💧</div>
+          <h3 class="lang-fr">Ricochet sur l'eau</h3>
+          <h3 class="lang-en">Stone Skipping</h3>
+          <p class="lang-fr">Trouvez un galet plat. Lancez-le en biais sur la surface de l'eau. Comptez les bonds ! Le record dans les villages était de 7 bonds. Peut-on battre les ancêtres ?</p>
+          <p class="lang-en">Find a flat pebble. Throw it at an angle across the water surface. Count the bounces! The village record was 7 skips. Can you beat the ancestors?</p>
+        </div>
+      </div>
+      <div class="card" style="cursor:default">
+        <div class="card-illustration">
+          <svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg">
+            <rect width="320" height="190" fill="#c8e8f5"/>
+            <rect x="0" y="135" width="320" height="55" fill="#2980b9" opacity="0.6"/>
+            <path d="M0,130 Q80,118 160,130 Q240,142 320,122 L320,190 L0,190 Z" fill="#1a6b8a"/>
+            <!-- Sandy beach -->
+            <path d="M0,125 Q80,112 160,124 Q240,110 320,120 L320,190 L0,190 Z" fill="#e8d5a0" opacity="0.8"/>
+            <!-- Hopscotch grid in sand -->
+            <rect x="140" y="55" width="40" height="30" rx="3" fill="none" stroke="#8b5e2a" stroke-width="2" stroke-dasharray="4,2"/>
+            <rect x="122" y="88" width="36" height="25" rx="3" fill="none" stroke="#8b5e2a" stroke-width="2" stroke-dasharray="4,2"/>
+            <rect x="162" y="88" width="36" height="25" rx="3" fill="none" stroke="#8b5e2a" stroke-width="2" stroke-dasharray="4,2"/>
+            <rect x="140" y="116" width="40" height="25" rx="3" fill="none" stroke="#8b5e2a" stroke-width="2" stroke-dasharray="4,2"/>
+            <text x="155" y="75" font-size="12" fill="#8b5e2a" font-weight="bold">1</text>
+            <text x="134" y="106" font-size="11" fill="#8b5e2a" font-weight="bold">2</text>
+            <text x="173" y="106" font-size="11" fill="#8b5e2a" font-weight="bold">3</text>
+            <text x="155" y="134" font-size="12" fill="#8b5e2a" font-weight="bold">4</text>
+            <!-- Child jumping -->
+            <circle cx="85" cy="110" r="8" fill="#3d1f0a"/>
+            <ellipse cx="85" cy="122" rx="7" ry="10" fill="#27ae60"/>
+            <line x1="78" y1="126" x2="70" y2="138" stroke="#3d1f0a" stroke-width="3" stroke-linecap="round"/>
+            <line x1="92" y1="126" x2="100" y2="136" stroke="#3d1f0a" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🦅</div>
+          <h3 class="lang-fr">La Marelle des Clans</h3>
+          <h3 class="lang-en">The Clans Hopscotch</h3>
+          <p class="lang-fr">Tracez 13 cases dans le sable. Chaque case porte le nom d'un clan Elog Mpoo. Le joueur doit sauter sur une case et nommer l'ancêtre du clan. Une erreur = recommencer !</p>
+          <p class="lang-en">Draw 13 squares in the sand. Each square bears the name of an Elog Mpoo clan. The player jumps on a square and must name the clan's ancestor. Wrong answer = start over!</p>
+        </div>
+      </div>
+      <div class="card" style="cursor:default">
+        <div class="card-illustration">
+          <svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg">
+            <rect width="320" height="190" fill="#c8e8f5"/>
+            <rect x="0" y="140" width="320" height="50" fill="#2980b9" opacity="0.6"/>
+            <path d="M0,135 Q80,123 160,135 Q240,147 320,127 L320,190 L0,190 Z" fill="#1a6b8a"/>
+            <!-- Yarn/string game -->
+            <circle cx="100" cy="110" r="8" fill="#3d1f0a"/>
+            <ellipse cx="100" cy="122" rx="7" ry="10" fill="#9b59b6"/>
+            <circle cx="220" cy="110" r="8" fill="#3d1f0a"/>
+            <ellipse cx="220" cy="122" rx="7" ry="10" fill="#e74c3c"/>
+            <!-- String between hands forming river pattern -->
+            <path d="M108,110 Q130,90 155,110 Q180,130 205,110 Q215,105 220,110" stroke="#d4a843" stroke-width="2.5" fill="none"/>
+            <!-- String crossings -->
+            <circle cx="130" cy="96" r="3" fill="#d4a843"/>
+            <circle cx="155" cy="110" r="3" fill="#d4a843"/>
+            <circle cx="180" cy="124" r="3" fill="#d4a843"/>
+            <circle cx="205" cy="110" r="3" fill="#d4a843"/>
+            <!-- Text label -->
+            <text x="145" y="160" font-size="11" fill="#1a6b8a" font-style="italic" text-anchor="middle">La Rivière en Ficelle</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🧵</div>
+          <h3 class="lang-fr">La Rivière en Ficelle</h3>
+          <h3 class="lang-en">The String River</h3>
+          <p class="lang-fr">Deux joueurs tendent une ficelle entre leurs mains. L'un crée une figure représentant la Sanaga — vagues, pirogues, filets. L'autre doit deviner et reproduire la figure. Jeu de coordination et d'imagination.</p>
+          <p class="lang-en">Two players stretch a string between their hands. One creates a figure representing the Sanaga — waves, canoes, nets. The other must guess and recreate the figure. A game of coordination and imagination.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <svg width="40" height="40" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="200" rx="20" fill="#0d3b5e"/>
+          <path d="M25,144 Q100,124 175,144 Q162,162 38,162 Z" fill="#7d4f0c"/>
+          <circle cx="88" cy="118" r="11" fill="#3d1f0a"/>
+          <ellipse cx="96" cy="134" rx="11" ry="12" fill="#27ae60"/>
+        </svg>
+        <h3>Yasuku.org</h3>
+      </div>
+      <p class="lang-fr"><span class="footer-gold">Canton Yassoukou</span> — Elog Mpoo — Littoral Cameroun</p>
+      <p class="lang-en"><span class="footer-gold">Canton Yassoukou</span> — Elog Mpoo — Littoral Cameroon</p>
+    </div>
+    <div class="footer-col">
+      <h4 class="lang-fr">Explorer</h4><h4 class="lang-en">Explore</h4>
+      <ul>
+        <li><a href="index.html"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a></li>
+        <li><a href="history.html"><span class="lang-fr">Histoire</span><span class="lang-en">History</span></a></li>
+        <li><a href="community.html"><span class="lang-fr">Communauté</span><span class="lang-en">Community</span></a></li>
+        <li><a href="learn.html"><span class="lang-fr">Langue</span><span class="lang-en">Language</span></a></li>
+        <li><a href="stories.html"><span class="lang-fr">Récits</span><span class="lang-en">Stories</span></a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="lang-fr">Ressources</h4><h4 class="lang-en">Resources</h4>
+      <ul>
+        <li><a href="https://bakoko.org" target="_blank" rel="noopener">bakoko.org</a></li>
+        <li><a href="https://peuplesawa.com" target="_blank" rel="noopener">peuplesawa.com</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Canton</h4>
+      <ul>
+        <li><span style="color:rgba(255,255,255,.5);font-size:.84rem">Edéa 1, Sanaga-Maritime</span></li>
+        <li><span style="color:rgba(255,255,255,.5);font-size:.84rem">Cameroun 🇨🇲</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Yasuku.org</span>
+    <div class="footer-bottom-links">
+      <a href="index.html"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a>
+      <a href="stories.html"><span class="lang-fr">Récits</span><span class="lang-en">Stories</span></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Quiz script inline (self-contained) -->
+<script>
+(function() {
+  const questions = [
+    {
+      fr: { q:'De qui descendent les Yasuku ?', a:'Lisukè, fils de Linyima, fils de Mpoo', wrong:['Ekoum, fils de Mpacke','Kalake, fils de Mpoo','Bii, fils de Likika'] },
+      en: { q:'Who do the Yasuku descend from?', a:'Lisukè, son of Linyima, son of Mpoo', wrong:['Ekoum, son of Mpacke','Kalake, son of Mpoo','Bii, son of Likika'] }
+    },
+    {
+      fr: { q:'Que signifie le préfixe "Ya-" en Bakoko ?', a:'Descendants de', wrong:['Roi de','Enfants de l\'eau','Gardiens de'] },
+      en: { q:'What does the prefix "Ya-" mean in Bakoko?', a:'Descendants of', wrong:['King of','Children of the water','Guardians of'] }
+    },
+    {
+      fr: { q:'Qu\'est-ce que Ngog Lituba ?', a:'Le rocher percé — berceau des Elog Mpoo', wrong:['Un roi Bakoko','Le fleuve Sanaga','Un village de Yassoukou'] },
+      en: { q:'What is Ngog Lituba?', a:'The perforated rock — cradle of the Elog Mpoo', wrong:['A Bakoko king','The Sanaga river','A Yassoukou village'] }
+    },
+    {
+      fr: { q:'Que signifie "Lipoo Li Mingenda Mi Bet Ben" ?', a:'L\'eau de la chute qui ne retourne jamais à sa source', wrong:['Le fleuve qui dort','Les enfants du lac Tchad','Le rocher qui parle'] },
+      en: { q:'What does "Lipoo Li Mingenda Mi Bet Ben" mean?', a:'The water of the fall that never returns to its source', wrong:['The sleeping river','Children of Lake Chad','The speaking rock'] }
+    },
+    {
+      fr: { q:'Combien de clans forment les Elog Mpoo ?', a:'13 clans', wrong:['7 clans','10 clans','15 clans'] },
+      en: { q:'How many clans form the Elog Mpoo?', a:'13 clans', wrong:['7 clans','10 clans','15 clans'] }
+    },
+    {
+      fr: { q:'Quel est le nom du rituel de communion avec les esprits de l\'eau ?', a:'Bisima', wrong:['Njéé','Ngoso','Bilemba'] },
+      en: { q:'What is the name of the ritual communion with water spirits?', a:'Bisima', wrong:['Njéé','Ngoso','Bilemba'] }
+    },
+    {
+      fr: { q:'Quelle date est la Fête Mpoo chaque année ?', a:'8 décembre', wrong:['1er janvier','25 décembre','15 août'] },
+      en: { q:'On what date is the Fête Mpoo held each year?', a:'December 8th', wrong:['January 1st','December 25th','August 15th'] }
+    },
+    {
+      fr: { q:'Quel clan est décrit comme gardant la langue Bakoko la plus pure ?', a:'Yakalak', wrong:['Yasuku','Yawanda','Adiè'] },
+      en: { q:'Which clan is described as keeping the purest Bakoko language?', a:'Yakalak', wrong:['Yasuku','Yawanda','Adié'] }
+    }
+  ];
+
+  let current = 0, score = 0, answered = false;
+
+  function shuffle(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i+1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  function getLang() {
+    return document.body.classList.contains('lang-en') ? 'en' : 'fr';
+  }
+
+  function render() {
+    const container = document.getElementById('quizContainer');
+    if (!container) return;
+    if (current >= questions.length) {
+      const pct = Math.round((score / questions.length) * 100);
+      const L = getLang();
+      container.innerHTML = `
+        <div style="text-align:center;padding:2rem;background:var(--river-mist);border-radius:var(--radius-lg)">
+          <div style="font-size:3rem;margin-bottom:1rem">${pct >= 80 ? '🏆' : pct >= 50 ? '🌟' : '📚'}</div>
+          <h3 style="font-family:var(--font-head);color:var(--river-deep);margin-bottom:.5rem">
+            ${L === 'fr' ? `Score final : ${score}/${questions.length} (${pct}%)` : `Final score: ${score}/${questions.length} (${pct}%)`}
+          </h3>
+          <p style="color:var(--text-light);margin-bottom:1.5rem">
+            ${pct >= 80 ? (L==='fr' ? 'Excellent ! Vous connaissez bien votre histoire Yasuku !' : 'Excellent! You know your Yasuku history well!') :
+              pct >= 50 ? (L==='fr' ? 'Bien ! Relisez les pages Histoire et Récits pour améliorer votre score.' : 'Good! Re-read the History and Stories pages to improve your score.') :
+              (L==='fr' ? 'Continuez d\'apprendre — votre histoire vous attend !' : 'Keep learning — your history awaits you!')}
+          </p>
+          <button onclick="resetQuiz()" class="btn btn-river">${L==='fr' ? 'Rejouer' : 'Play again'}</button>
+        </div>`;
+      return;
+    }
+
+    const L = getLang();
+    const q = questions[current][L];
+    const options = shuffle([q.a, ...q.wrong]);
+    const progress = Math.round(((current) / questions.length) * 100);
+
+    container.innerHTML = `
+      <div style="margin-bottom:1rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem">
+          <span style="font-size:.78rem;color:var(--text-light);font-weight:700">
+            ${L==='fr' ? `Question ${current+1}/${questions.length}` : `Question ${current+1}/${questions.length}`}
+          </span>
+          <span style="font-size:.78rem;color:var(--river-mid);font-weight:700">
+            ${L==='fr' ? `Score : ${score}` : `Score: ${score}`}
+          </span>
+        </div>
+        <div style="height:6px;background:#eee;border-radius:3px;overflow:hidden">
+          <div style="width:${progress}%;height:100%;background:linear-gradient(90deg,var(--gold),var(--river-light));border-radius:3px;transition:width .3s"></div>
+        </div>
+      </div>
+      <div style="background:var(--river-mist);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.25rem">
+        <p style="font-family:var(--font-head);font-size:1.1rem;color:var(--river-deep);line-height:1.5;margin:0">${q.q}</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem" id="quizOptions">
+        ${options.map((opt, i) => `
+          <button onclick="answer(this, '${opt.replace(/'/g,"\\'")}', '${q.a.replace(/'/g,"\\'")}', ${current})"
+            style="padding:.85rem 1rem;border:2px solid #ddd;border-radius:var(--radius);background:var(--white);cursor:pointer;font-family:var(--font-body);font-size:.88rem;text-align:left;transition:all .2s;line-height:1.4;color:var(--text)">
+            <strong style="color:var(--river-mid)">${String.fromCharCode(65+i)}.</strong> ${opt}
+          </button>`).join('')}
+      </div>
+      <div id="quizFeedback" style="min-height:2.5rem;margin-top:1rem"></div>`;
+  }
+
+  window.answer = function(btn, chosen, correct, qIndex) {
+    if (answered || qIndex !== current) return;
+    answered = true;
+    const isCorrect = chosen === correct;
+    if (isCorrect) score++;
+
+    document.querySelectorAll('#quizOptions button').forEach(b => {
+      b.disabled = true;
+      const txt = b.textContent.replace(/^[A-D]\.\s*/,'').trim();
+      if (txt === correct) b.style.cssText = 'border-color:#27ae60;background:#eafaf1;color:#1a5c1a;cursor:default;padding:.85rem 1rem;border-radius:12px;font-family:var(--font-body);font-size:.88rem;text-align:left;border-width:2px;line-height:1.4;';
+      else if (b === btn && !isCorrect) b.style.cssText = 'border-color:#e74c3c;background:#fdf0f0;color:#8b0000;cursor:default;padding:.85rem 1rem;border-radius:12px;font-family:var(--font-body);font-size:.88rem;text-align:left;border-width:2px;line-height:1.4;';
+    });
+
+    const L = getLang();
+    const fb = document.getElementById('quizFeedback');
+    if (fb) {
+      fb.innerHTML = `<div style="padding:.75rem 1rem;border-radius:var(--radius);background:${isCorrect?'#eafaf1':'#fdf0f0'};color:${isCorrect?'#1a5c1a':'#8b0000'};font-weight:600;font-size:.9rem">
+        ${isCorrect ? (L==='fr'?'✅ Correct !':'✅ Correct!') : (L==='fr'?`❌ Pas tout à fait. La bonne réponse : <em>${correct}</em>`:`❌ Not quite. The correct answer: <em>${correct}</em>`)}
+        <button onclick="nextQuestion()" style="margin-left:1rem;padding:.35rem .9rem;background:var(--river-mid);color:white;border:none;border-radius:15px;cursor:pointer;font-family:var(--font-body);font-weight:700;font-size:.8rem">
+          ${L==='fr' ? 'Suivant →' : 'Next →'}
+        </button>
+      </div>`;
+    }
+  };
+
+  window.nextQuestion = function() {
+    current++;
+    answered = false;
+    render();
+  };
+
+  window.resetQuiz = function() {
+    current = 0; score = 0; answered = false;
+    shuffle(questions);
+    render();
+  };
+
+  // Re-render on language change
+  const origToggle = window.toggleLanguage;
+  window.toggleLanguage = function() {
+    if (origToggle) origToggle();
+    setTimeout(render, 50);
+  };
+
+  document.addEventListener('DOMContentLoaded', render);
+})();
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>

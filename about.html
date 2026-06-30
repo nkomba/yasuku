@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Diyouckey Coco Nkomba — gardien de la mémoire du fleuve, fondateur de bakoko.org et de yasuku.org, fils de Yassoukou et de Yakalag."/>
+  <title>À propos — Yasuku.org · Diyouckey Coco Nkomba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    /* ---- About page specific ---- */
+    .about-hero {
+      background: linear-gradient(160deg, #0a1a2a 0%, #0d3b5e 55%, #1a5c2a 100%);
+      padding: 8rem 2rem 5rem;
+      text-align: center;
+      color: var(--white);
+    }
+    .about-hero .section-tag {
+      background: rgba(212,168,67,0.18);
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+    }
+    .about-hero h1 {
+      font-family: var(--font-head);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.2;
+      margin-bottom: .6rem;
+    }
+    .about-hero .subtitle {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,.65);
+      letter-spacing: .04em;
+    }
+
+    /* Profile block */
+    .profile-wrap {
+      max-width: 940px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 3.5rem;
+      align-items: start;
+      padding: 4rem 2rem;
+    }
+    @media(max-width: 760px) {
+      .profile-wrap { grid-template-columns: 1fr; }
+    }
+
+    .profile-photo-col { position: sticky; top: 90px; }
+
+    .profile-photo-frame {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 4/5;
+      background: linear-gradient(145deg, #b8dcea, #d0e8f4, #c0dff0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .profile-photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+    .profile-photo-frame .photo-fallback {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      color: var(--river-mid);
+      text-align: center;
+      padding: 2rem;
+    }
+    .profile-photo-frame img[src="images/coco-nkomba.jpg"]:not([complete]) + .photo-fallback,
+    .profile-photo-frame img[src="images/coco-nkomba.jpg"][broken] + .photo-fallback {
+      display: flex;
+    }
+
+    .profile-caption {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: .78rem;
+      color: var(--text-light);
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    .clan-badge {
+      display: inline-block;
+      background: var(--river-deep);
+      color: var(--gold);
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: .3rem .85rem;
+      border-radius: 20px;
+      margin: .25rem .2rem 0;
+    }
+
+    /* Bio content */
+    .bio-content {
+      color: var(--text);
+      line-height: 1.9;
+    }
+    .bio-content p {
+      margin-bottom: 1.3rem;
+      font-size: .97rem;
+    }
+    .bio-content h2 {
+      font-family: var(--font-head);
+      font-size: 1.55rem;
+      color: var(--river-deep);
+      margin: 2.5rem 0 .75rem;
+      padding-bottom: .5rem;
+      border-bottom: 2px solid var(--river-pale);
+    }
+    .bio-content h3 {
+      font-family: var(--font-head);
+      font-size: 1.2rem;
+      color: var(--forest-deep);
+      margin: 2rem 0 .6rem;
+    }
+    .bio-content em { color: var(--river-mid); font-style: italic; }
+    .bio-content strong { color: var(--river-deep); }
+    .bio-content blockquote {
+      border-left: 4px solid var(--gold);
+      margin: 1.8rem 0;
+      padding: 1rem 1.5rem;
+      background: #fffcec;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-family: var(--font-head);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--river-deep);
+      line-height: 1.7;
+    }
+    .bio-content blockquote cite {
+      display: block;
+      margin-top: .5rem;
+      font-size: .78rem;
+      font-style: normal;
+      color: var(--text-light);
+      letter-spacing: .06em;
+    }
+
+    .bio-divider {
+      text-align: center;
+      color: var(--gold);
+      font-size: 1.3rem;
+      margin: 2rem 0;
+      letter-spacing: .5em;
+    }
+
+    /* Ancestors grid */
+    .ancestors-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: .8rem;
+      margin: 1.2rem 0;
+    }
+    .ancestor-card {
+      background: var(--river-mist);
+      border-radius: var(--radius);
+      padding: .8rem 1rem;
+      border-left: 3px solid var(--gold);
+      font-size: .85rem;
+    }
+    .ancestor-card strong {
+      display: block;
+      font-size: .78rem;
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: .2rem;
+    }
+
+    /* Project links */
+    .project-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+<body class="lang-fr">
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <svg width="46" height="46" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="border-radius:10px">
+      <rect width="200" height="200" rx="28" fill="#eef6fc"/>
+      <ellipse cx="100" cy="158" rx="92" ry="38" fill="#2980b9"/>
+      <path d="M8,148 Q55,132 100,148 Q145,164 192,148 L192,200 L8,200 Z" fill="#1f6fa3"/>
+      <path d="M25,144 Q100,124 175,144 Q162,162 38,162 Z" fill="#7d4f0c"/>
+      <ellipse cx="96" cy="134" rx="11" ry="12" fill="#27ae60"/>
+      <line x1="118" y1="120" x2="128" y2="148" stroke="#8b5e2a" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="88" cy="118" r="11" fill="#3d1f0a"/>
+    </svg>
+    <div>
+      <span class="nav-logo-text">Yasuku.org</span>
+      <span class="nav-logo-sub">Canton Yassoukou · Cameroun</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a></li>
+    <li><a href="history.html"><span class="lang-fr">Histoire</span><span class="lang-en">History</span></a></li>
+    <li><a href="community.html"><span class="lang-fr">Communauté</span><span class="lang-en">Community</span></a></li>
+    <li><a href="learn.html"><span class="lang-fr">Apprendre</span><span class="lang-en">Learn</span></a></li>
+    <li><a href="stories.html"><span class="lang-fr">Récits</span><span class="lang-en">Stories</span></a></li>
+    <li><a href="games.html"><span class="lang-fr">Jeux</span><span class="lang-en">Games</span></a></li>
+    <li><a href="about.html" class="active"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a></li>
+    <button class="lang-btn">English</button>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<div class="about-hero">
+  <span class="section-tag lang-fr">Le gardien de la mémoire</span>
+  <span class="section-tag lang-en">Keeper of the River's Memory</span>
+  <h1>Diyouckey Coco Nkomba</h1>
+  <p class="subtitle lang-fr">Fils de Yassoukou &amp; Yakalag · Fondateur de bakoko.org</p>
+  <p class="subtitle lang-en">Son of Yassoukou &amp; Yakalag · Founder of bakoko.org</p>
+</div>
+
+<!-- PROFILE -->
+<section style="background:var(--white)">
+  <div class="profile-wrap">
+
+    <!-- LEFT: photo + badges -->
+    <div class="profile-photo-col fade-in">
+      <div class="profile-photo-frame">
+        <img
+          src="images/coco-nkomba.jpg"
+          alt="Diyouckey Coco Nkomba"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="photo-fallback">
+          <svg width="80" height="80" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="100" fill="#c8e8f5"/>
+            <circle cx="100" cy="82" r="32" fill="#7d4f1a"/>
+            <ellipse cx="100" cy="155" rx="52" ry="42" fill="#7d4f1a"/>
+            <path d="M52,148 Q100,128 148,148" fill="#5c3808"/>
+          </svg>
+          <span style="font-size:.82rem;color:var(--text-light)">
+            <span class="lang-fr">Photo à ajouter :<br><code>images/coco-nkomba.jpg</code></span>
+            <span class="lang-en">Add photo as:<br><code>images/coco-nkomba.jpg</code></span>
+          </span>
+        </div>
+      </div>
+
+      <p class="profile-caption lang-fr">Diyouckey Coco Nkomba, lors d'un événement communautaire Elog Mpoo</p>
+      <p class="profile-caption lang-en">Diyouckey Coco Nkomba at an Elog Mpoo community gathering</p>
+
+      <div style="text-align:center;margin-top:1rem">
+        <span class="clan-badge">Yassoukou</span>
+        <span class="clan-badge">Yakalag</span>
+        <span class="clan-badge">Elog Mpoo</span>
+      </div>
+
+      <div style="margin-top:1.8rem;background:var(--river-mist);border-radius:var(--radius);padding:1.2rem 1.4rem">
+        <p style="font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--river-mid);margin-bottom:.7rem">Projets</p>
+        <div style="display:flex;flex-direction:column;gap:.5rem">
+          <a href="https://bakoko.org" target="_blank" rel="noopener" style="font-size:.88rem;font-weight:700;color:var(--river-deep)">🌐 bakoko.org</a>
+          <a href="index.html" style="font-size:.88rem;font-weight:700;color:var(--river-deep)">🌐 yasuku.org</a>
+        </div>
+        <p style="font-size:.75rem;color:var(--text-light);margin-top:.8rem;line-height:1.55" class="lang-fr">Archives communautaires Elog Mpoo — langue, histoire, généalogie, tradition orale</p>
+        <p style="font-size:.75rem;color:var(--text-light);margin-top:.8rem;line-height:1.55" class="lang-en">Elog Mpoo community archives — language, history, genealogy, oral tradition</p>
+      </div>
+    </div>
+
+    <!-- RIGHT: biography -->
+    <div class="bio-content fade-in">
+
+      <!-- FRENCH BIO -->
+      <div class="lang-fr">
+        <blockquote>
+          « Les Bakoko sont venus avec le fleuve — et le fleuve ne les a pas oubliés. »
+          <cite>— Proverbe Elog Mpoo, préservé sur bakoko.org</cite>
+        </blockquote>
+
+        <p>Coco Nkomba a fait de cette parole sa vocation tranquille : où qu'il se trouve dans le monde, ne pas oublier.</p>
+
+        <p>Coco Nkomba est fils de <strong>Yassoukou et de Yakalag</strong> — deux des treize clans des Elog Mpoo (Bakoko), dont les cantons longent les rives de la Sanaga dans l'arrondissement d'Edéa 1 et de Mouanko, Région du Littoral au Cameroun. Son double nom porte le poids de deux lignées : <strong>Nkomba</strong> est son héritage maternel ; le prénom <strong>Diyouckey</strong> honore le patriarche de la famille qui décida de lui donner son propre nom — un prénom murmur dans ces forêts et villages fluviaux depuis plus longtemps que ne peuvent le confirmer les archives écrites. Il est aussi connu sous le nom de <strong>Coco</strong> — le nom du quotidien, le nom de l'accueil, le nom de l'affection, un fils bien-aimé dans son village d'Elogkam.</p>
+
+        <p>Ce qu'il a accompli avec <strong>bakoko.org</strong> n'est pas un projet technologique, bien qu'il soit construit avec l'esprit rigoureux de quelqu'un également à l'aise dans le code et dans la chronique. C'est, dans son essence, un acte de dévotion ancestrale — le prolongement numérique d'un impératif oral : <em>tu dois te souvenir, et tu dois le transmettre.</em></p>
+
+        <div class="bio-divider">· · ·</div>
+
+        <h2>Les ancêtres qui l'ont formé</h2>
+
+        <p>Derrière chaque conteur se trouve une longue procession de ceux qui lui ont appris, les premiers, que les histoires ont de l'importance. Coco Nkomba a été formé par une famille dont le savoir a traversé en lui comme l'eau traverse un delta.</p>
+
+        <div class="ancestors-grid">
+          <div class="ancestor-card">
+            <strong>Père</strong>
+            feu le Révérend Ebobisse Theodore Emmanuel, Église Évangélique du Cameroun — auteur d'un ouvrage sur les Elog Mpoo
+          </div>
+          <div class="ancestor-card">
+            <strong>Père adoptif</strong>
+            Nkomba Samuel Collothier — dont le nom porte la géographie de la résistance, enraciné dans le territoire Yakalag
+          </div>
+          <div class="ancestor-card">
+            <strong>Mère</strong>
+            Ebobisse Berthe Dora épse Mpeh — héritière de la lignée Ebobisse-Eyike, pilier de la continuité cérémonielle et communautaire
+          </div>
+          <div class="ancestor-card">
+            <strong>Matriarche</strong>
+            Eyadi Elissa ye Ngon Bika'a — gardienne des voies ancestrales
+          </div>
+          <div class="ancestor-card">
+            <strong>Famille élargie</strong>
+            Elenda Papa Mon François · Diyouckey Eugene Prosper · Ebobisse Sam Théophile · Ebobisse Christine · Itoumbou Rodolphe
+          </div>
+          <div class="ancestor-card">
+            <strong>Communautés</strong>
+            Elogkam et Lobethal — le village de la clairière forestière et l'empreinte de la mission luthérienne
+          </div>
+        </div>
+
+        <p>Son père de nom, <strong>Samuel Collothier Nkomba</strong>, lui a donné un nom qui porte sa propre géographie — la lignée Nkomba, enracinée dans le territoire Yakalag, dans la terre au-dessus de la Sanaga où ses ancêtres se sont un jour dressés pour bloquer les caravanes coloniales allemandes. Ce n'est pas une métaphore. C'est consigné dans les archives orales de l'ACTEM : les Yasuku et leurs proches alliés ont physiquement bloqué les caravanes allemandes qui tentaient de traverser le Nyong dans les années 1890, choisissant la souveraineté plutôt que la sécurité.</p>
+
+        <p>Sa mère, <strong>Ebobisse Berthe Dora</strong>, vient de la lignée Ebobisse-Eyike — une famille parmi les plus actives dans la gouvernance Elog Mpoo, représentée jusqu'au sein de la direction administrative de l'ACTEM. Elle est devenue l'ancre de sa famille : celle qui a nourri, nommé, prié et instruit. Une mère Bakoko n'est pas simplement un parent — elle est, dans la tradition de la société <em>Bilemba</em> des femmes, une gardienne du droit communautaire, du savoir médicinal et de la continuité cérémonielle. Berthe Dora a tenu ce rôle sans qu'il soit nécessaire de le nommer.</p>
+
+        <div class="bio-divider">· · ·</div>
+
+        <h2>L'œuvre qu'il accomplit</h2>
+
+        <p>Coco Nkomba a construit <strong>bakoko.org</strong> comme un acte d'amour et d'urgence historique — parce qu'il comprend, comme le comprennent tôt ou tard tous les membres de la diaspora, que la distance est la complice du temps. Les familles se dispersent. Les grands-parents meurent. Les langues s'amincissent jusqu'à quelques phrases mémorisées. Le jour vient où un petit-enfant ne peut plus demander à un ancien ce que signifie un proverbe.</p>
+
+        <p>Le site traite la tradition orale non pas comme un substitut inférieur à l'histoire écrite, mais comme une source primaire dotée de sa propre rigueur et de sa propre autorité — la même position académique défendue par le chercheur doctoral français Cosme Dikoumé et l'anthropologue Christine Buhan dans leurs travaux de référence sur les Elog Mpoo. Ce que Coco Nkomba a fait, c'est mettre ce principe académique sous une forme accessible à tout enfant Bakoko disposant d'un téléphone à Edéa, Dihane, Mouanko, Douala, Paris ou en Virginie.</p>
+
+        <p>Le site préserve les récits d'origine — l'ancien voyage depuis l'Égypte et le lac Tchad, à travers la montagne sacrée de <strong>Ngog Lituba</strong>, berceau de la dispersion des Elog Mpoo. Il conserve la langue : <em>Mbog e le yo</em> — « le village est à toi », phrase d'accueil. <em>Bot bi mbog</em> — « gens du clan », expression d'appartenance. <em>Ndah nyi</em> — « la maison est ici », salutation sur le seuil. Il documente la résistance des années 1890, lorsque des communautés Bakoko ont fait face aux expéditions militaires allemandes qui ont tué des centaines de personnes et pillé des tambours sacrés.</p>
+
+        <div class="bio-divider">· · ·</div>
+
+        <h2>Un conteur au sens ancien du terme</h2>
+
+        <p>Dans la tradition des Elog Mpoo, les plus grands conteurs ne sont pas des divertisseurs. Ce sont des gardiens. Les formes orales Bakoko — le <em>Ngoso</em> (poésie chantée), l'<em>Ondende</em> (vers avec cordes), les chants rituels de la société <em>Njéé</em> — n'existent pas pour la représentation mais pour la préservation. Un conteur dans cette tradition est quelqu'un qui prend ce qui lui a été confié et refuse de le laisser se dissoudre.</p>
+
+        <p>Coco Nkomba fait cela à travers les langues et les fuseaux horaires. Il le fait à travers un site qui accueille les contributions des locuteurs de la diaspora en France, en Belgique et en Amérique du Nord. Il le fait en nommant publiquement ceux qui l'ont formé : ses parents, sa famille élargie, les communautés d'Elogkam et de Lobethal dont la vie quotidienne était elle-même un acte de continuité culturelle.</p>
+
+        <p>Il est, dans le sens le plus plein de la tradition Bakoko : <strong><em>mut'a mbog</em></strong> — une personne du clan. Où qu'il se trouve, le village est encore le sien. Et grâce au travail qu'il accomplit, il le sera aussi pour ses descendants.</p>
+      </div>
+
+      <!-- ENGLISH BIO -->
+      <div class="lang-en">
+        <blockquote>
+          "The Bakoko came with the river — and the river has not forgotten them."
+          <cite>— Elog Mpoo proverb, preserved on bakoko.org</cite>
+        </blockquote>
+
+        <p>Diyouckey Coco Nkomba has made it his life's quiet vocation to ensure that, wherever in the world he finds himself, he too does not forget.</p>
+
+        <p>Coco Nkomba is a son of <strong>Yassoukou &amp; Yakalag</strong> — two of the thirteen clans of the Elog Mpoo (Bakoko), whose cantons sit in the Edéa 1 and Mouanko arrondissements along the banks of the Sanaga River in Cameroon's Littoral Region. His double name carries the weight of two lineages: <strong>Nkomba</strong> is his maternal inheritance; the name <strong>Diyouckey</strong> honors the family patriarch who decided to name him after himself — a name that has been whispered in these forests and river settlements longer than any written record can confirm. He is also known as <strong>Coco</strong> — the everyday name, the name of welcome, the name of affection, a beloved son in his Elogkam village.</p>
+
+        <p>What he has done with <strong>bakoko.org</strong> is not a technology project, though it is built with the disciplined mind of someone equally at home in code and chronicle. It is, at its core, an act of ancestral devotion — a digital extension of an oral imperative: <em>you must remember, and you must tell it forward.</em></p>
+
+        <div class="bio-divider">· · ·</div>
+
+        <h2>The Ancestors Who Made Him</h2>
+
+        <p>Behind every storyteller stands a long procession of those who first taught them that stories matter. Coco Nkomba has been shaped by a family whose knowledge moved through him like water through a delta.</p>
+
+        <div class="ancestors-grid">
+          <div class="ancestor-card">
+            <strong>Father</strong>
+            late Rev. Ebobisse Theodore Emmanuel, Église Évangélique du Cameroun — author of a book on the Elog Mpoo
+          </div>
+          <div class="ancestor-card">
+            <strong>Name-father</strong>
+            Nkomba Samuel Collothier — whose name carries the geography of resistance, rooted in Yakalag territory above the Sanaga
+          </div>
+          <div class="ancestor-card">
+            <strong>Mother</strong>
+            Ebobisse Berthe Dora épse Mpeh — heir to the Ebobisse-Eyike lineage, anchor of ceremonial and community continuity
+          </div>
+          <div class="ancestor-card">
+            <strong>Matriarch</strong>
+            Eyadi Elissa ye Ngon Bika'a — who showed him the ways of the ancestors
+          </div>
+          <div class="ancestor-card">
+            <strong>Extended family</strong>
+            Elenda Papa Mon François · Diyouckey Eugene Prosper · Ebobisse Sam Théophile · Ebobisse Christine · Itoumbou Rodolphe
+          </div>
+          <div class="ancestor-card">
+            <strong>Communities</strong>
+            Elogkam and Lobethal — the forest clearing village and the trace of the Lutheran mission presence
+          </div>
+        </div>
+
+        <p>His name-father, <strong>Samuel Collothier Nkomba</strong>, gave him a name that carries its own geography — the Nkomba lineage, rooted in Yakalag territory, in the soil above the Sanaga River where his ancestors once stood to block German colonial caravans from crossing. This is not metaphor. It is documented in the ACTEM oral record — the Yasuku and their nearest kin physically blocked German caravans from crossing the Nyong in the 1890s, choosing sovereignty over safety.</p>
+
+        <p>His mother, <strong>Ebobisse Berthe Dora</strong>, comes from the Ebobisse-Eyike lineage — a name found among the most active families in Elog Mpoo governance, including in the ACTEM's own administrative leadership. She became the anchor of her family: the one who fed, named, prayed over, and instructed. A Bakoko mother is not merely a parent — she is, in the tradition of the <em>Bilemba</em> women's society, a holder of community law, medicinal knowledge, and ceremonial continuity. Berthe Dora carried that role without ceremony requiring anyone to name it.</p>
+
+        <div class="bio-divider">· · ·</div>
+
+        <h2>The Work He Is Doing</h2>
+
+        <p>Coco Nkomba built <strong>bakoko.org</strong> as an act of love and of historical urgency — because he understands, as all diaspora community members eventually understand, that distance is time's co-conspirator. Families scatter. Grandparents die. Languages thin to a few remembered phrases. The day arrives when a grandchild can no longer ask an elder what a proverb means.</p>
+
+        <p>The website treats oral tradition not as a lesser substitute for written history but as a primary source with its own rigor and authority — the same scholarly position advanced by the French doctoral researcher Cosme Dikoumé and the anthropologist Christine Buhan in their landmark academic works on the Elog Mpoo. What Coco Nkomba has done is put that scholarly principle into a form accessible to any Bakoko child with a phone in Edéa, Dihane, Mouanko, Douala, Paris, or Virginia.</p>
+
+        <p>The site preserves origin narratives — the ancient journey from Egypt and Chad, through the sacred mountain of <strong>Ngog Lituba</strong>, the cradle of the Elog Mpoo dispersal. It holds the language: <em>Mbog e le yo</em> — "the village is yours," a phrase of welcome. <em>Bot bi mbog</em> — "people of the clan," an expression of belonging. <em>Ndah nyi</em> — "the house is here," the greeting at a threshold. It documents the resistance of the 1890s, when Bakoko communities faced German military expeditions that killed hundreds and looted sacred drums.</p>
+
+        <div class="bio-divider">· · ·</div>
+
+        <h2>A Storyteller in the Old Sense</h2>
+
+        <p>In the Elog Mpoo tradition, the greatest storytellers are not entertainers. They are guardians. The oral forms of the Bakoko — the <em>Ngoso</em> (sung poetry), the <em>Ondende</em> (verse with strings), the ritual songs of the <em>Njéé</em> society — exist not for performance but for preservation. A storyteller in this tradition is someone who takes what was handed to them and refuses to let it dissolve.</p>
+
+        <p>Coco Nkomba does this across languages and time zones. He does it through a website that welcomes contributions from diaspora speakers in France, Belgium, and North America. He does it by publicly naming the people who made him: his parents, his extended family, the communities of Elogkam and Lobethal whose daily lives were themselves acts of cultural continuity.</p>
+
+        <p>He is, in the fullest sense of the Bakoko tradition: <strong><em>mut'a mbog</em></strong> — a person of the clan. Wherever he finds himself, the village is still his. And because of the work he is doing, it will be his descendants' too.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING PROVERB -->
+<div class="proverb-block" style="background:linear-gradient(135deg,#0a1a2a,#1a3d1a)">
+  <div class="proverb-icon">🌊</div>
+  <p class="proverb-text lang-fr">« <em>Mut'a mbog</em> — une personne du clan. Où qu'il se trouve, le village est encore le sien. »</p>
+  <p class="proverb-text lang-en">"<em>Mut'a mbog</em> — a person of the clan. Wherever he finds himself, the village is still his."</p>
+  <p class="proverb-attr">— Tradition Elog Mpoo / Elog Mpoo tradition</p>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <svg width="40" height="40" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="200" rx="20" fill="#0d3b5e"/>
+          <path d="M25,144 Q100,124 175,144 Q162,162 38,162 Z" fill="#7d4f0c"/>
+          <circle cx="88" cy="118" r="11" fill="#3d1f0a"/>
+          <ellipse cx="96" cy="134" rx="11" ry="12" fill="#27ae60"/>
+        </svg>
+        <h3>Yasuku.org</h3>
+      </div>
+      <p class="lang-fr"><span class="footer-gold">Canton Yassoukou</span> — Elog Mpoo — Littoral Cameroun</p>
+      <p class="lang-en"><span class="footer-gold">Canton Yassoukou</span> — Elog Mpoo — Littoral Cameroon</p>
+    </div>
+    <div class="footer-col">
+      <h4 class="lang-fr">Explorer</h4><h4 class="lang-en">Explore</h4>
+      <ul>
+        <li><a href="index.html"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a></li>
+        <li><a href="history.html"><span class="lang-fr">Histoire</span><span class="lang-en">History</span></a></li>
+        <li><a href="community.html"><span class="lang-fr">Communauté</span><span class="lang-en">Community</span></a></li>
+        <li><a href="learn.html"><span class="lang-fr">Apprendre</span><span class="lang-en">Learn</span></a></li>
+        <li><a href="stories.html"><span class="lang-fr">Récits</span><span class="lang-en">Stories</span></a></li>
+        <li><a href="games.html"><span class="lang-fr">Jeux</span><span class="lang-en">Games</span></a></li>
+        <li><a href="about.html"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="lang-fr">Sources</h4><h4 class="lang-en">Sources</h4>
+      <ul>
+        <li><a href="https://bakoko.org" target="_blank" rel="noopener">bakoko.org</a></li>
+        <li><a href="https://peuplesawa.com" target="_blank" rel="noopener">peuplesawa.com</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Canton</h4>
+      <ul>
+        <li><span style="color:rgba(255,255,255,.5);font-size:.84rem">Edéa 1, Sanaga-Maritime</span></li>
+        <li><span style="color:rgba(255,255,255,.5);font-size:.84rem">Cameroun 🇨🇲</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Yasuku.org</span>
+    <div class="footer-bottom-links">
+      <a href="index.html"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a>
+      <a href="about.html"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
