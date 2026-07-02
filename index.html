@@ -191,80 +191,14 @@
 
       <!-- River illustration -->
       <div class="fade-in" style="border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-lg)">
-        <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;background:linear-gradient(160deg,#b8dcea 0%,#d8eef8 50%,#c5e3f0 100%)">
-          <!-- Sky gradient -->
-          <defs>
-            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#c8e8f5"/>
-              <stop offset="100%" stop-color="#e8f5fc"/>
-            </linearGradient>
-            <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#2980b9"/>
-              <stop offset="100%" stop-color="#1a6b8a"/>
-            </linearGradient>
-            <linearGradient id="sunset" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stop-color="#f39c12" stop-opacity="0.3"/>
-              <stop offset="100%" stop-color="#e67e22" stop-opacity="0"/>
-            </linearGradient>
-          </defs>
-          <!-- Sky -->
-          <rect width="480" height="380" fill="url(#sky)"/>
-          <!-- Sun glow -->
-          <circle cx="420" cy="80" r="45" fill="#f5d76e" opacity="0.6"/>
-          <circle cx="420" cy="80" r="28" fill="#f0c020"/>
-          <!-- Forest silhouette far -->
-          <path d="M0,140 Q60,110 120,130 Q180,110 240,125 Q300,108 360,128 Q420,108 480,125 L480,200 L0,200 Z" fill="#2d6a2d" opacity="0.7"/>
-          <!-- Forest near left -->
-          <path d="M0,155 Q30,138 60,150 Q90,135 120,148 Q150,132 180,145 L180,220 L0,220 Z" fill="#1a3d1a"/>
-          <!-- River surface -->
-          <rect x="0" y="210" width="480" height="170" fill="url(#water)"/>
-          <!-- River reflections -->
-          <path d="M0,230 Q120,218 240,230 Q360,242 480,230" stroke="#5dade2" stroke-width="2" fill="none" opacity="0.4"/>
-          <path d="M0,250 Q100,240 200,250 Q300,260 400,248 Q440,244 480,250" stroke="#aedcf0" stroke-width="1.5" fill="none" opacity="0.3"/>
-          <path d="M0,268 Q80,258 160,268 Q240,278 320,265 Q400,255 480,265" stroke="#aedcf0" stroke-width="1.5" fill="none" opacity="0.25"/>
-          <!-- Sunset shimmer on water -->
-          <rect x="340" y="210" width="140" height="170" fill="url(#sunset)"/>
-          <!-- Canoe 1 (left, two paddlers) -->
-          <path d="M60,240 Q120,228 180,240 Q168,252 72,252 Z" fill="#6b4010"/>
-          <path d="M60,240 Q120,229 180,240" stroke="#4a2c08" stroke-width="1.5" fill="none"/>
-          <!-- Paddler 1 -->
-          <circle cx="90" cy="233" r="7" fill="#3d1f0a"/>
-          <ellipse cx="90" cy="240" rx="6" ry="8" fill="#c0392b"/>
-          <line x1="90" y1="235" x2="104" y2="228" stroke="#3d1f0a" stroke-width="3" stroke-linecap="round"/>
-          <line x1="104" y1="228" x2="110" y2="244" stroke="#8b5e2a" stroke-width="2.5" stroke-linecap="round"/>
-          <!-- Paddler 2 -->
-          <circle cx="145" cy="233" r="7" fill="#3d1f0a"/>
-          <ellipse cx="145" cy="240" rx="6" ry="8" fill="#27ae60"/>
-          <line x1="145" y1="235" x2="158" y2="228" stroke="#3d1f0a" stroke-width="3" stroke-linecap="round"/>
-          <line x1="158" y1="228" x2="164" y2="244" stroke="#8b5e2a" stroke-width="2.5" stroke-linecap="round"/>
-          <!-- Canoe 2 (right, fisherman with net) -->
-          <path d="M300,258 Q350,248 400,258 Q392,268 308,268 Z" fill="#7d4f0c"/>
-          <circle cx="335" cy="252" r="6" fill="#3d1f0a"/>
-          <ellipse cx="335" cy="258" rx="5.5" ry="7" fill="#2980b9"/>
-          <!-- Fishing net -->
-          <path d="M335,248 Q352,238 368,245 Q365,260 342,258 Z" stroke="#555" stroke-width="1.2" fill="rgba(255,255,255,0.2)"/>
-          <!-- Net grid lines -->
-          <line x1="344" y1="247" x2="348" y2="260" stroke="#555" stroke-width="0.8" opacity="0.6"/>
-          <line x1="354" y1="243" x2="357" y2="257" stroke="#555" stroke-width="0.8" opacity="0.6"/>
-          <line x1="340" y1="250" x2="364" y2="253" stroke="#555" stroke-width="0.8" opacity="0.6"/>
-          <line x1="338" y1="255" x2="360" y2="258" stroke="#555" stroke-width="0.8" opacity="0.6"/>
-          <!-- Village huts on bank -->
-          <rect x="195" y="168" width="40" height="28" rx="3" fill="#c8a060"/>
-          <polygon points="188,170 215,148 242,170" fill="#8b4513"/>
-          <rect x="208" y="182" width="12" height="14" fill="#7d4020"/>
-          <rect x="250" y="172" width="38" height="26" rx="3" fill="#c8a060"/>
-          <polygon points="244,174 269,152 294,174" fill="#8b4513"/>
-          <rect x="263" y="184" width="11" height="14" fill="#7d4020"/>
-          <!-- Palm trees -->
-          <line x1="150" y1="170" x2="155" y2="210" stroke="#5c3808" stroke-width="3"/>
-          <path d="M155,170 Q140,158 128,162 Q138,168 140,174 Q150,162 160,168 Q165,156 155,158 Q160,164 155,170 Z" fill="#27ae60"/>
-          <line x1="310" y1="165" x2="313" y2="210" stroke="#5c3808" stroke-width="3"/>
-          <path d="M313,165 Q298,153 286,157 Q296,163 298,169 Q308,157 318,163 Q323,151 313,153 Q318,159 313,165 Z" fill="#2ecc71"/>
-          <!-- Birds -->
-          <path d="M200,95 Q207,88 214,95" stroke="#666" stroke-width="1.5" fill="none"/>
-          <path d="M230,80 Q237,73 244,80" stroke="#666" stroke-width="1.5" fill="none"/>
-          <path d="M260,100 Q265,94 270,100" stroke="#666" stroke-width="1.5" fill="none"/>
-        </svg>
+        <div style="position:relative;width:100%;padding-bottom:56.25%">
+          <iframe src="https://www.youtube.com/embed/r98Pf0N4Ugk"
+                  title="River scene"
+                  style="position:absolute;top:0;left:0;width:100%;height:100%"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -284,29 +218,9 @@
     <div class="cards-grid">
       <!-- Card 1: History -->
       <a href="history.html" class="card fade-in">
-        <div class="card-illustration">
-          <svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg">
-            <!-- Ngog Lituba sacred rock scene -->
-            <rect width="320" height="190" fill="#c8e8f5"/>
-            <rect x="0" y="130" width="320" height="60" fill="#4a9e6f" opacity="0.6"/>
-            <!-- Rock/mountain -->
-            <path d="M90,130 Q130,60 170,130 Z" fill="#6b7280"/>
-            <path d="M110,130 Q145,72 180,130 Z" fill="#8b9198"/>
-            <!-- Cave opening (Ngog Lituba hole) -->
-            <ellipse cx="148" cy="118" rx="14" ry="18" fill="#2c3442"/>
-            <ellipse cx="148" cy="116" rx="10" ry="13" fill="#1a2030"/>
-            <!-- Pilgrims -->
-            <circle cx="55" cy="128" r="5" fill="#3d1f0a"/>
-            <ellipse cx="55" cy="136" rx="4" ry="6" fill="#e74c3c"/>
-            <circle cx="68" cy="126" r="5" fill="#3d1f0a"/>
-            <ellipse cx="68" cy="134" rx="4" ry="6" fill="#3498db"/>
-            <circle cx="240" cy="128" r="5" fill="#3d1f0a"/>
-            <ellipse cx="240" cy="136" rx="4" ry="6" fill="#e67e22"/>
-            <!-- Stars/sun -->
-            <circle cx="260" cy="35" r="22" fill="#f5d76e" opacity="0.7"/>
-            <circle cx="260" cy="35" r="14" fill="#f0c020"/>
-          </svg>
-        </div>
+<div class="card-illustration">
+  <img src="images/ngok-lituba-2.jpg" alt="Ngog Lituba sacred rock" style="display:block;width:100%;height:100%;object-fit:cover">
+</div>
         <div class="card-body">
           <div class="card-icon">📜</div>
           <h3 class="lang-fr">Histoire</h3>
@@ -320,39 +234,9 @@
 
       <!-- Card 2: Community -->
       <a href="community.html" class="card fade-in">
-        <div class="card-illustration">
-          <svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg">
-            <rect width="320" height="190" fill="#c8e8f5"/>
-            <rect x="0" y="140" width="320" height="50" fill="#2980b9" opacity="0.5"/>
-            <!-- Village panorama -->
-            <path d="M0,120 Q80,100 160,115 Q240,100 320,118 L320,190 L0,190 Z" fill="#5da05d" opacity="0.7"/>
-            <!-- 5 huts representing villages -->
-            <g transform="translate(20,95)">
-              <rect x="0" y="20" width="32" height="22" rx="2" fill="#d4a05a"/>
-              <polygon points="-4,22 16,4 36,22" fill="#8b4513"/>
-            </g>
-            <g transform="translate(80,88)">
-              <rect x="0" y="20" width="36" height="25" rx="2" fill="#c8902a"/>
-              <polygon points="-5,22 18,2 41,22" fill="#7d3a10"/>
-            </g>
-            <g transform="translate(148,85)">
-              <rect x="0" y="20" width="34" height="26" rx="2" fill="#d4a05a"/>
-              <polygon points="-4,22 17,1 38,22" fill="#8b4513"/>
-            </g>
-            <g transform="translate(215,90)">
-              <rect x="0" y="20" width="32" height="24" rx="2" fill="#c8902a"/>
-              <polygon points="-4,22 16,3 36,22" fill="#7d3a10"/>
-            </g>
-            <g transform="translate(272,95)">
-              <rect x="0" y="20" width="30" height="22" rx="2" fill="#d4a05a"/>
-              <polygon points="-4,22 15,4 34,22" fill="#8b4513"/>
-            </g>
-            <!-- People gathering -->
-            <circle cx="160" cy="150" r="5" fill="#3d1f0a"/>
-            <circle cx="145" cy="152" r="5" fill="#3d1f0a"/>
-            <circle cx="175" cy="150" r="5" fill="#3d1f0a"/>
-          </svg>
-        </div>
+<div class="card-illustration">
+  <img src="images/njiee.jpg" alt="Njéé ceremony" style="display:block;width:100%;height:100%;object-fit:cover">
+</div>
         <div class="card-body">
           <div class="card-icon">🏘️</div>
           <h3 class="lang-fr">Communauté</h3>
@@ -366,28 +250,9 @@
 
       <!-- Card 3: Learn -->
       <a href="learn.html" class="card fade-in">
-        <div class="card-illustration">
-          <svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg">
-            <rect width="320" height="190" fill="#c8e8f5"/>
-            <!-- Open book with river background -->
-            <rect x="0" y="130" width="320" height="60" fill="#2980b9" opacity="0.4"/>
-            <!-- Book -->
-            <rect x="60" y="50" width="200" height="120" rx="10" fill="#f5f0e5" transform="rotate(-3,160,110)"/>
-            <line x1="160" y1="52" x2="160" y2="168" stroke="#c8a060" stroke-width="3"/>
-            <!-- Text lines left page -->
-            <line x1="75" y1="78" x2="152" y2="76" stroke="#9b8b7a" stroke-width="2" opacity="0.5"/>
-            <line x1="75" y1="90" x2="148" y2="88" stroke="#9b8b7a" stroke-width="2" opacity="0.5"/>
-            <line x1="75" y1="102" x2="150" y2="100" stroke="#9b8b7a" stroke-width="2" opacity="0.5"/>
-            <line x1="75" y1="114" x2="145" y2="112" stroke="#9b8b7a" stroke-width="2" opacity="0.5"/>
-            <!-- Bakoko script / decorative text right page -->
-            <text x="170" y="90" font-family="Georgia" font-size="18" fill="#1a6b8a" font-weight="bold">Ya-</text>
-            <text x="170" y="112" font-family="Georgia" font-size="14" fill="#2d6a2d">Suku</text>
-            <text x="170" y="132" font-family="Georgia" font-size="12" fill="#8b5e2a">Elog</text>
-            <!-- Quill -->
-            <path d="M240,45 Q270,20 275,55 Q260,50 248,80 Q244,65 240,45 Z" fill="#e8d5a0"/>
-            <line x1="253" y1="64" x2="240" y2="110" stroke="#9b8b7a" stroke-width="1.5"/>
-          </svg>
-        </div>
+<div class="card-illustration">
+  <img src="images/naeli.jpg" alt="Naeli" style="display:block;width:100%;height:auto;object-fit:cover">
+</div>
         <div class="card-body">
           <div class="card-icon">🗣️</div>
           <h3 class="lang-fr">Apprendre la langue</h3>
@@ -401,38 +266,9 @@
 
       <!-- Card 4: Stories -->
       <a href="stories.html" class="card fade-in">
-        <div class="card-illustration">
-          <svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg">
-            <rect width="320" height="190" fill="#b8dcea"/>
-            <!-- Night campfire scene -->
-            <rect x="0" y="120" width="320" height="70" fill="#0d3b5e" opacity="0.85"/>
-            <!-- Stars -->
-            <circle cx="50" cy="30" r="1.5" fill="#fff" opacity="0.8"/>
-            <circle cx="100" cy="15" r="2" fill="#fff"/>
-            <circle cx="160" cy="25" r="1.5" fill="#fff" opacity="0.9"/>
-            <circle cx="220" cy="10" r="2" fill="#fff"/>
-            <circle cx="280" cy="30" r="1.5" fill="#fff" opacity="0.7"/>
-            <circle cx="130" cy="50" r="1" fill="#fff"/>
-            <circle cx="200" cy="45" r="1" fill="#fff" opacity="0.8"/>
-            <!-- Moon -->
-            <circle cx="60" cy="45" r="22" fill="#f5e642" opacity="0.7"/>
-            <circle cx="68" cy="40" r="16" fill="#b8dcea"/>
-            <!-- River reflection of moon -->
-            <ellipse cx="80" cy="158" rx="20" ry="8" fill="#f5e642" opacity="0.2"/>
-            <!-- Campfire -->
-            <ellipse cx="160" cy="135" rx="18" ry="5" fill="#7d2d00" opacity="0.7"/>
-            <path d="M152,135 Q160,108 168,135 Z" fill="#e07020"/>
-            <path d="M155,135 Q162,115 170,135 Z" fill="#f0a030"/>
-            <path d="M158,135 Q163,120 167,135 Z" fill="#f5d050"/>
-            <!-- Seated elders around fire -->
-            <circle cx="130" cy="132" r="6" fill="#3d1f0a"/>
-            <ellipse cx="130" cy="140" rx="7" ry="9" fill="#c0392b"/>
-            <circle cx="195" cy="132" r="6" fill="#3d1f0a"/>
-            <ellipse cx="195" cy="140" rx="7" ry="9" fill="#2980b9"/>
-            <circle cx="162" cy="148" r="5" fill="#3d1f0a"/>
-            <ellipse cx="162" cy="155" rx="6" ry="7" fill="#e67e22"/>
-          </svg>
-        </div>
+<div class="card-illustration">
+  <img src="images/sanaga-1.jpg" alt="Sanaga night scene" style="display:block;width:100%;height:auto;object-fit:cover">
+</div>
         <div class="card-body">
           <div class="card-icon">🌙</div>
           <h3 class="lang-fr">Récits anciens</h3>
@@ -488,28 +324,9 @@
 
       <!-- Card 6: Diaspora -->
       <a href="#diaspora" class="card fade-in">
-        <div class="card-illustration">
-          <svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg">
-            <rect width="320" height="190" fill="#c8e8f5"/>
-            <!-- Globe/world -->
-            <circle cx="160" cy="100" r="70" fill="#1a6b8a" opacity="0.25"/>
-            <circle cx="160" cy="100" r="70" stroke="#1a6b8a" stroke-width="2" fill="none" opacity="0.5"/>
-            <!-- Meridians -->
-            <ellipse cx="160" cy="100" rx="40" ry="70" stroke="#1a6b8a" stroke-width="1" fill="none" opacity="0.4"/>
-            <ellipse cx="160" cy="100" rx="70" ry="30" stroke="#1a6b8a" stroke-width="1" fill="none" opacity="0.4"/>
-            <!-- Africa shape simplified -->
-            <path d="M145,55 Q165,52 172,65 Q180,75 178,92 Q182,110 175,125 Q168,142 160,148 Q152,142 148,128 Q138,110 140,92 Q138,75 145,55 Z" fill="#27ae60" opacity="0.7"/>
-            <!-- Connection lines (diaspora) -->
-            <line x1="160" y1="80" x2="80" y2="45" stroke="#d4a843" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.7"/>
-            <line x1="160" y1="80" x2="245" y2="50" stroke="#d4a843" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.7"/>
-            <line x1="160" y1="100" x2="55" y2="100" stroke="#d4a843" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.7"/>
-            <circle cx="80" cy="45" r="5" fill="#d4a843"/>
-            <circle cx="245" cy="50" r="5" fill="#d4a843"/>
-            <circle cx="55" cy="100" r="5" fill="#d4a843"/>
-            <!-- Heart at center -->
-            <text x="152" y="105" font-size="16">🏠</text>
-          </svg>
-        </div>
+<div class="card-illustration">
+  <img src="images/sanaga.jpg" alt="Sanaga" style="display:block;width:100%;height:auto;object-fit:cover">
+</div>
         <div class="card-body">
           <div class="card-icon">🌍</div>
           <h3 class="lang-fr">Diaspora & Alliés</h3>

@@ -122,52 +122,13 @@
       </div>
 
       <!-- Map/location illustration -->
-      <div class="fade-in" style="border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg)">
-        <svg viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;background:#c8e8f5">
-          <!-- Map tile background -->
-          <rect width="420" height="340" fill="#e8f4fc"/>
-          <!-- River system -->
-          <path d="M0,200 Q80,185 130,200 Q160,208 180,195 Q210,180 240,190 Q280,205 320,185 Q360,168 420,178" stroke="#2980b9" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.8"/>
-          <path d="M0,202 Q80,187 130,202 Q160,210 180,197 Q210,182 240,192 Q280,207 320,187 Q360,170 420,180" stroke="#5dade2" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.5"/>
-          <!-- River label -->
-          <text x="60" y="225" font-size="11" fill="#1a6b8a" font-style="italic" font-weight="600">Sanaga</text>
-          <!-- Forest areas -->
-          <path d="M0,0 L420,0 L420,140 Q350,120 280,130 Q210,115 140,128 Q70,115 0,125 Z" fill="#5da05d" opacity="0.35"/>
-          <!-- Edéa city -->
-          <circle cx="180" cy="195" r="16" fill="#e07020" opacity="0.9"/>
-          <text x="198" y="193" font-size="12" fill="#e07020" font-weight="700">Edéa</text>
-          <!-- Yassoukou canton marker -->
-          <circle cx="140" cy="178" r="10" fill="#d4a843"/>
-          <circle cx="140" cy="178" r="6" fill="var(--white)"/>
-          <circle cx="140" cy="178" r="3" fill="#d4a843"/>
-          <text x="105" y="165" font-size="10" fill="#d4a843" font-weight="700">Yassoukou</text>
-          <!-- Canton boundary (approximate) -->
-          <path d="M100,150 Q130,140 160,145 Q185,148 195,162 Q198,178 190,192 Q175,205 155,208 Q132,210 115,200 Q98,188 96,172 Q94,160 100,150 Z" stroke="#d4a843" stroke-width="2" fill="rgba(212,168,67,0.1)" stroke-dasharray="5,3"/>
-          <!-- Yawanda territory -->
-          <circle cx="215" cy="185" r="6" fill="#2980b9" opacity="0.7"/>
-          <text x="224" y="183" font-size="9" fill="#2980b9">Yawanda</text>
-          <!-- Adié territory -->
-          <circle cx="175" cy="215" r="6" fill="#27ae60" opacity="0.7"/>
-          <text x="183" y="213" font-size="9" fill="#27ae60">Adiè</text>
-          <!-- Compass -->
-          <g transform="translate(370,40)">
-            <circle cx="0" cy="0" r="22" fill="white" opacity="0.85" stroke="#ccc" stroke-width="1"/>
-            <polygon points="0,-16 3,0 0,6 -3,0" fill="#c0392b"/>
-            <polygon points="0,16 3,0 0,-6 -3,0" fill="#888"/>
-            <text x="-3" y="-18" font-size="9" fill="#c0392b" font-weight="700">N</text>
-          </g>
-          <!-- Scale -->
-          <line x1="20" y1="320" x2="70" y2="320" stroke="#555" stroke-width="2"/>
-          <line x1="20" y1="315" x2="20" y2="325" stroke="#555" stroke-width="2"/>
-          <line x1="70" y1="315" x2="70" y2="325" stroke="#555" stroke-width="2"/>
-          <text x="25" y="315" font-size="9" fill="#555">~20 km</text>
-          <!-- Legend -->
-          <circle cx="30" cy="290" r="5" fill="#d4a843"/>
-          <text x="40" y="294" font-size="9" fill="#555">Canton Yassoukou</text>
-          <circle cx="30" cy="308" r="5" fill="#e07020"/>
-          <text x="40" y="312" font-size="9" fill="#555">Edéa (ville)</text>
-        </svg>
-      </div>
+<div class="fade-in" style="border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg)">
+  <img src="images/yassoukou.jpg" alt="Map of the Yassoukou canton near Edéa" style="display:block;width:100%;height:100%;object-fit:cover">
+</div>
+
+<div class="fade-in" style="border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);margin-top:1.5rem">
+  <img src="images/pecheurs.jpg" alt="Pêcheurs — Fishermen" style="display:block;width:100%;height:100%;object-fit:cover">
+</div>
     </div>
   </div>
 </section>
@@ -417,149 +378,39 @@
 
     <div class="photo-grid fade-in">
       <!-- Market scene -->
-      <div class="photo-card">
-        <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg">
-          <rect width="360" height="270" fill="#c8e8f5"/>
-          <defs>
-            <linearGradient id="mktBg" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#d8eef8"/>
-              <stop offset="100%" stop-color="#b8dcea"/>
-            </linearGradient>
-          </defs>
-          <rect width="360" height="270" fill="url(#mktBg)"/>
-          <rect x="0" y="195" width="360" height="75" fill="#2980b9" opacity="0.55"/>
-          <path d="M0,190 Q90,178 180,190 Q270,202 360,184 L360,270 L0,270 Z" fill="#1a6b8a" opacity="0.7"/>
-          <!-- Market stalls on bank -->
-          <!-- Stall 1 -->
-          <rect x="30" y="148" width="55" height="40" rx="2" fill="#f5f0e5"/>
-          <rect x="25" y="143" width="65" height="10" rx="3" fill="#c0392b"/>
-          <rect x="35" y="152" width="14" height="10" fill="#f39c12" rx="1"/>
-          <rect x="52" y="152" width="14" height="10" fill="#27ae60" rx="1"/>
-          <rect x="69" y="152" width="14" height="10" fill="#e74c3c" rx="1"/>
-          <!-- Stall 2 -->
-          <rect x="110" y="148" width="55" height="40" rx="2" fill="#f5f0e5"/>
-          <rect x="105" y="143" width="65" height="10" rx="3" fill="#2980b9"/>
-          <circle cx="125" cy="158" r="8" fill="#f39c12"/>
-          <circle cx="141" cy="158" r="8" fill="#f39c12"/>
-          <circle cx="157" cy="158" r="8" fill="#27ae60"/>
-          <!-- Stall 3 -->
-          <rect x="195" y="148" width="55" height="40" rx="2" fill="#f5f0e5"/>
-          <rect x="190" y="143" width="65" height="10" rx="3" fill="#27ae60"/>
-          <!-- Fish on display -->
-          <path d="M200,155 Q215,148 228,155 Q215,162 200,155 Z" fill="#aedcf0"/>
-          <path d="M212,155 Q227,148 240,155 Q227,162 212,155 Z" fill="#7dc8e0"/>
-          <!-- Vendors -->
-          <circle cx="60" cy="143" r="6" fill="#3d1f0a"/>
-          <ellipse cx="60" cy="152" rx="5" ry="7" fill="#9b59b6"/>
-          <!-- Jug on head -->
-          <ellipse cx="60" cy="136" rx="5" ry="7" fill="#c8902a"/>
-          <circle cx="140" cy="140" r="6" fill="#3d1f0a"/>
-          <ellipse cx="140" cy="149" rx="5" ry="7" fill="#e74c3c"/>
-          <circle cx="220" cy="142" r="6" fill="#3d1f0a"/>
-          <ellipse cx="220" cy="151" rx="5" ry="7" fill="#2980b9"/>
-          <!-- Boat with goods -->
-          <path d="M270,195 Q310,184 350,195 Q342,207 278,207 Z" fill="#7d4f0c"/>
-          <rect x="290" y="188" width="40" height="12" rx="2" fill="#d4a05a" opacity="0.8"/>
-          <circle cx="300" cy="190" r="5" fill="#3d1f0a"/>
-          <ellipse cx="300" cy="197" rx="5" ry="6" fill="#e67e22"/>
-        </svg>
-        <div class="photo-caption lang-fr">Marché sur les berges — commerce entre villages</div>
-        <div class="photo-caption lang-en">Riverside market — trade between villages</div>
-      </div>
+<div class="photo-card">
+  <img src="images/peche-sanaga.png" alt="Marché sur les berges de la Sanaga" style="display:block;width:100%;height:100%;object-fit:cover">
+
+</div>
 
       <!-- Drumming ceremony -->
-      <div class="photo-card">
-        <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg">
-          <rect width="360" height="270" fill="#b8dcea"/>
-          <rect width="360" height="270" fill="#1a2a3a"/>
-          <rect x="0" y="200" width="360" height="70" fill="#0d2030"/>
-          <!-- Torchlight -->
-          <ellipse cx="180" cy="120" rx="100" ry="80" fill="#e07020" opacity="0.1"/>
-          <ellipse cx="180" cy="130" rx="70" ry="60" fill="#f0a030" opacity="0.08"/>
-          <!-- Torches -->
-          <line x1="60" y1="170" x2="60" y2="120" stroke="#7d4f0c" stroke-width="5"/>
-          <path d="M52,120 Q60,100 68,120 Z" fill="#e07020"/>
-          <path d="M55,120 Q61,106 67,120 Z" fill="#f5d050"/>
-          <line x1="300" y1="170" x2="300" y2="120" stroke="#7d4f0c" stroke-width="5"/>
-          <path d="M292,120 Q300,100 308,120 Z" fill="#e07020"/>
-          <path d="M295,120 Q301,106 307,120 Z" fill="#f5d050"/>
-          <!-- Large drum -->
-          <ellipse cx="180" cy="175" rx="40" ry="15" fill="#7d4f0c"/>
-          <rect x="140" y="152" width="80" height="23" rx="5" fill="#8b5e2a"/>
-          <ellipse cx="180" cy="152" rx="40" ry="10" fill="#6b3a0a"/>
-          <!-- Drummer -->
-          <circle cx="180" cy="140" r="9" fill="#3d1f0a"/>
-          <ellipse cx="180" cy="152" rx="8" ry="11" fill="#c0392b"/>
-          <!-- Drumsticks -->
-          <line x1="168" y1="147" x2="155" y2="158" stroke="#7d4f0c" stroke-width="3" stroke-linecap="round"/>
-          <line x1="192" y1="147" x2="205" y2="158" stroke="#7d4f0c" stroke-width="3" stroke-linecap="round"/>
-          <!-- Dancers -->
-          <circle cx="100" cy="158" r="8" fill="#2c1a0a"/>
-          <ellipse cx="100" cy="169" rx="7" ry="10" fill="#2c1a0a"/>
-          <line x1="92" y1="162" x2="78" y2="150" stroke="#2c1a0a" stroke-width="3.5" stroke-linecap="round"/>
-          <line x1="108" y1="162" x2="118" y2="148" stroke="#2c1a0a" stroke-width="3.5" stroke-linecap="round"/>
-          <circle cx="260" cy="158" r="8" fill="#2c1a0a"/>
-          <ellipse cx="260" cy="169" rx="7" ry="10" fill="#2c1a0a"/>
-          <line x1="252" y1="162" x2="238" y2="150" stroke="#2c1a0a" stroke-width="3.5" stroke-linecap="round"/>
-          <line x1="268" y1="162" x2="282" y2="148" stroke="#2c1a0a" stroke-width="3.5" stroke-linecap="round"/>
-          <!-- Stars -->
-          <circle cx="80" cy="30" r="1.5" fill="#fff" opacity="0.9"/>
-          <circle cx="150" cy="15" r="2" fill="#fff"/>
-          <circle cx="240" cy="25" r="1.5" fill="#fff"/>
-          <circle cx="320" cy="18" r="2" fill="#fff"/>
-        </svg>
-        <div class="photo-caption lang-fr">Cérémonie Njéé — initiation et transmission</div>
-        <div class="photo-caption lang-en">Njéé ceremony — initiation and transmission</div>
-      </div>
+<div class="photo-card">
+  <div style="position:relative;width:100%;padding-bottom:56.25%">
+    <iframe src="https://www.youtube.com/embed/skjM90c5eQ8"
+            title="Cérémonie Njéé"
+            style="position:absolute;top:0;left:0;width:100%;height:100%"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+  </div>
+  <div class="photo-caption lang-fr">Cérémonie Njéé — initiation et transmission</div>
+  <div class="photo-caption lang-en">Njéé ceremony — initiation and transmission</div>
+</div>
 
       <!-- Village meeting -->
-      <div class="photo-card">
-        <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg">
-          <rect width="360" height="270" fill="#c8e8f5"/>
-          <defs>
-            <linearGradient id="meetBg" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#c0d8e8"/>
-              <stop offset="100%" stop-color="#a8c8e0"/>
-            </linearGradient>
-          </defs>
-          <rect width="360" height="270" fill="url(#meetBg)"/>
-          <!-- Ground -->
-          <ellipse cx="180" cy="240" rx="180" ry="50" fill="#5da05d" opacity="0.5"/>
-          <!-- Big tree (meeting under) -->
-          <rect x="172" y="80" width="16" height="130" rx="5" fill="#5c3808"/>
-          <ellipse cx="180" cy="80" rx="70" ry="55" fill="#27ae60" opacity="0.85"/>
-          <ellipse cx="155" cy="70" rx="45" ry="38" fill="#2ecc71" opacity="0.7"/>
-          <ellipse cx="210" cy="72" rx="50" ry="40" fill="#27ae60" opacity="0.75"/>
-          <!-- Seated elders in circle -->
-          <!-- Elder 1 -->
-          <circle cx="130" cy="185" r="7" fill="#3d1f0a"/>
-          <ellipse cx="130" cy="196" rx="7" ry="9" fill="#e67e22"/>
-          <!-- Elder 2 (with staff) -->
-          <circle cx="155" cy="195" r="7" fill="#3d1f0a"/>
-          <ellipse cx="155" cy="206" rx="7" ry="9" fill="#2980b9"/>
-          <line x1="162" y1="200" x2="165" y2="220" stroke="#7d4f0c" stroke-width="2.5" stroke-linecap="round"/>
-          <!-- Elder 3 (chief with headwear) -->
-          <circle cx="180" cy="200" r="8" fill="#3d1f0a"/>
-          <ellipse cx="180" cy="212" rx="8" ry="10" fill="#8b0000"/>
-          <!-- Chief's headdress -->
-          <path d="M172,198 Q180,188 188,198 Q184,193 180,194 Q176,193 172,198 Z" fill="#d4a843"/>
-          <!-- Elder 4 -->
-          <circle cx="205" cy="195" r="7" fill="#3d1f0a"/>
-          <ellipse cx="205" cy="206" rx="7" ry="9" fill="#27ae60"/>
-          <!-- Elder 5 -->
-          <circle cx="230" cy="185" r="7" fill="#3d1f0a"/>
-          <ellipse cx="230" cy="196" rx="7" ry="9" fill="#9b59b6"/>
-          <!-- Young listener -->
-          <circle cx="180" cy="235" r="6" fill="#3d1f0a"/>
-          <ellipse cx="180" cy="244" rx="6" ry="8" fill="#e74c3c"/>
-          <!-- Sunlight through tree -->
-          <line x1="120" y1="50" x2="145" y2="85" stroke="#f5d76e" stroke-width="2" opacity="0.4"/>
-          <line x1="180" y1="30" x2="180" y2="80" stroke="#f5d76e" stroke-width="2" opacity="0.3"/>
-          <line x1="240" y1="50" x2="215" y2="85" stroke="#f5d76e" stroke-width="2" opacity="0.4"/>
-        </svg>
-        <div class="photo-caption lang-fr">Conseil des anciens sous l'arbre du village</div>
-        <div class="photo-caption lang-en">Council of elders under the village tree</div>
-      </div>
+<!-- Village meeting -->
+<div class="photo-card">
+  <div style="position:relative;width:100%;padding-bottom:56.25%">
+    <iframe src="https://www.youtube.com/embed/D0VFVbgNGHE"
+            title="Conseil des anciens"
+            style="position:absolute;top:0;left:0;width:100%;height:100%"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+  </div>
+  <div class="photo-caption lang-fr">Conseil des anciens sous l'arbre du village</div>
+  <div class="photo-caption lang-en">Council of elders under the village tree</div>
+</div>
     </div>
   </div>
 </section>
